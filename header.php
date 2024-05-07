@@ -436,42 +436,26 @@
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
-                                        <!--end:Menu item-->
-                                        <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" href="dashboards/projects.html">
+                                            <a class="menu-link" id="btnMenuProductos" href="#/reportes">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
-                                                <span class="menu-title">Suscripciones</span>
+                                                <span class="menu-title">Productos</span>
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
                                         <!--end:Menu item-->
                                         <!--begin:Menu item-->
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" href="dashboards/online-courses.html">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Ventas</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
+                                       
+                                        
                                         <!--end:Menu item-->
                                         <!--begin:Menu item-->
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" href="dashboards/marketing.html">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Reportes</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
+                                        
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <
                                         <!--end:Menu item-->
                                        
                                     </div>

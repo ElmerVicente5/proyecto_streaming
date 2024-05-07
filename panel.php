@@ -24,6 +24,12 @@ include('header.php');
             context.partial("productos.php", function() {});
             $("#btnMenuProductos").addClass("active");
         });
+        this.get('#/reportes', function(context) {
+            context.app.swap('');
+            $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
+            context.partial("productos.php", function() {});
+            $("#btnMenuProductos").addClass("active");
+        });
 
 
         this.notFound = function(context,url){
