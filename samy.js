@@ -1,0 +1,1 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sammy.js/0.7.2/sammy.min.js" integrity="sha512-c0j0G78ga6fKDwfaMu3lvxpg0CY0C/UCdtPCkF5xRmgE5p5l0qg5TH+amN1PWNVKnGqS4YJZZeUc5abtPPWlIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
