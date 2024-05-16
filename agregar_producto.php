@@ -68,46 +68,7 @@
 											</div>
 											<!--end::Thumbnail settings-->
 											<!--begin::Status-->
-											<div class="card card-flush py-4">
-												<!--begin::Card header-->
-												<div class="card-header">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Status</h2>
-													</div>
-													<!--end::Card title-->
-													<!--begin::Card toolbar-->
-													<div class="card-toolbar">
-														<div class="rounded-circle bg-success w-15px h-15px" id="kt_ecommerce_add_product_status"></div>
-													</div>
-													<!--begin::Card toolbar-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0">
-													<!--begin::Select2-->
-													<select class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-hide-search="true" data-placeholder="Select an option" id="kt_ecommerce_add_product_status_select" data-select2-id="select2-data-kt_ecommerce_add_product_status_select" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-														<option></option>
-														<option value="published" selected="selected" data-select2-id="select2-data-10-92gb">Published</option>
-														<option value="draft">Draft</option>
-														<option value="scheduled">Scheduled</option>
-														<option value="inactive">Inactive</option>
-													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-9-ym73" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kt_ecommerce_add_product_status_select-container" aria-controls="select2-kt_ecommerce_add_product_status_select-container"><span class="select2-selection__rendered" id="select2-kt_ecommerce_add_product_status_select-container" role="textbox" aria-readonly="true" title="Published">Published</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-													<!--end::Select2-->
-													<!--begin::Description-->
-													<div class="text-muted fs-7">Set the product status.</div>
-													<!--end::Description-->
-													<!--begin::Datepicker-->
-													<div class="d-none mt-10">
-														<label for="kt_ecommerce_add_product_status_datepicker" class="form-label">Select publishing date and time</label>
-														<input class="form-control flatpickr-input" id="kt_ecommerce_add_product_status_datepicker" placeholder="Pick date &amp; time" type="text" readonly="readonly">
-													</div>
-													<!--end::Datepicker-->
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Status-->
-											<!--begin::Category & tags-->
+											
 											<div class="card card-flush py-4">
 												<!--begin::Card header-->
 												<div class="card-header">
@@ -164,57 +125,8 @@
 												</div>
 												<!--end::Card body-->
 											</div>
-											<!--end::Category & tags-->
-											<!--begin::Weekly sales-->
-											<div class="card card-flush py-4">
-												<!--begin::Card header-->
-												<div class="card-header">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Weekly Sales</h2>
-													</div>
-													<!--end::Card title-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0">
-													<span class="text-muted">No data available. Sales data will begin capturing once product has been published.</span>
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Weekly sales-->
-											<!--begin::Template settings-->
-											<div class="card card-flush py-4">
-												<!--begin::Card header-->
-												<div class="card-header">
-													<!--begin::Card title-->
-													<div class="card-title">
-														<h2>Product Template</h2>
-													</div>
-													<!--end::Card title-->
-												</div>
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												<div class="card-body pt-0">
-													<!--begin::Select store template-->
-													<label for="kt_ecommerce_add_product_store_template" class="form-label">Select a product template</label>
-													<!--end::Select store template-->
-													<!--begin::Select2-->
-													<select class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-hide-search="true" data-placeholder="Select an option" id="kt_ecommerce_add_product_store_template" data-select2-id="select2-data-kt_ecommerce_add_product_store_template" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-														<option></option>
-														<option value="default" selected="selected" data-select2-id="select2-data-14-eymn">Default template</option>
-														<option value="electronics">Electronics</option>
-														<option value="office">Office stationary</option>
-														<option value="fashion">Fashion</option>
-													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-13-p65n" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kt_ecommerce_add_product_store_template-container" aria-controls="select2-kt_ecommerce_add_product_store_template-container"><span class="select2-selection__rendered" id="select2-kt_ecommerce_add_product_store_template-container" role="textbox" aria-readonly="true" title="Default template">Default template</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-													<!--end::Select2-->
-													<!--begin::Description-->
-													<div class="text-muted fs-7">Assign a template from your current theme to define how a single product is displayed.</div>
-													<!--end::Description-->
-												</div>
-												<!--end::Card body-->
-											</div>
-											<!--end::Template settings-->
+											
+											
 										</div>
 										<!--end::Aside column-->
 										<!--begin::Main column-->
@@ -447,42 +359,7 @@
 																	<div class="text-muted fs-7">Set the discounted product price. The product will be reduced at the determined fixed price</div>
 																	<!--end::Description-->
 																</div>
-																<!--end::Input group-->
-																<!--begin::Tax-->
-																<div class="d-flex flex-wrap gap-5">
-																	<!--begin::Input group-->
-																	<div class="fv-row w-100 flex-md-root fv-plugins-icon-container">
-																		<!--begin::Label-->
-																		<label class="required form-label">Tax Class</label>
-																		<!--end::Label-->
-																		<!--begin::Select2-->
-																		<select class="form-select mb-2 select2-hidden-accessible" name="tax" data-control="select2" data-hide-search="true" data-placeholder="Select an option" data-select2-id="select2-data-15-1lro" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-																			<option data-select2-id="select2-data-17-hlsi"></option>
-																			<option value="0">Tax Free</option>
-																			<option value="1">Taxable Goods</option>
-																			<option value="2">Downloadable Product</option>
-																		</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-16-akm4" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-tax-ax-container" aria-controls="select2-tax-ax-container"><span class="select2-selection__rendered" id="select2-tax-ax-container" role="textbox" aria-readonly="true" title="Select an option"><span class="select2-selection__placeholder">Select an option</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-																		<!--end::Select2-->
-																		<!--begin::Description-->
-																		<div class="text-muted fs-7">Set the product tax class.</div>
-																		<!--end::Description-->
-																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
-																	<!--end::Input group-->
-																	<!--begin::Input group-->
-																	<div class="fv-row w-100 flex-md-root">
-																		<!--begin::Label-->
-																		<label class="form-label">VAT Amount (%)</label>
-																		<!--end::Label-->
-																		<!--begin::Input-->
-																		<input type="text" class="form-control mb-2" value="">
-																		<!--end::Input-->
-																		<!--begin::Description-->
-																		<div class="text-muted fs-7">Set the product VAT about.</div>
-																		<!--end::Description-->
-																	</div>
-																	<!--end::Input group-->
-																</div>
-																<!--end:Tax-->
+																
 															</div>
 															<!--end::Card header-->
 														</div>
@@ -775,22 +652,13 @@
 							<!--begin::Footer container-->
 							<div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
 								<!--begin::Copyright-->
-								<div class="text-gray-900 order-2 order-md-1">
-									<span class="text-muted fw-semibold me-1">2024©</span>
-									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
-								</div>
-								<!--end::Copyright-->
-								<!--begin::Menu-->
+								
 								<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-									<li class="menu-item">
-										<a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-									</li>
+									
 									<li class="menu-item">
 										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
 									</li>
-									<li class="menu-item">
-										<a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
-									</li>
+									
 								</ul>
 								<!--end::Menu-->
 							</div>
