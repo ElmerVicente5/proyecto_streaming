@@ -61,6 +61,6 @@ $persona["idiomas"][0]="español";
     <?php endif; ?>
 
 
-
+   
 
 
