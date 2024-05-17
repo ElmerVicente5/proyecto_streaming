@@ -519,6 +519,30 @@
                                         </div>
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
+                                            <a class="menu-link" id="btnMenuAddSuscripcion" href="#/agregarSuscripcion">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">Agregar Suscripcion</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <!--begin:Menu link-->
+                                            <a class="menu-link" id="btnMenuAddVerSuscripcion" href="#/VerSuscripcion">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">Ver Suscripcion</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+
+
+
+                                        <div class="menu-item">
+                                            <!--begin:Menu link-->
                                             <a class="menu-link" id="btnMenuReportes" href="#">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>

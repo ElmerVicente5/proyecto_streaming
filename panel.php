@@ -43,6 +43,20 @@ include('header.php');
             context.partial("agregar_categoria.php", function() {});
             $("#btnMenuAddCategoria").addClass("active");
         });
+        this.get('#/agregarSuscripcion', function(context) {
+            context.app.swap('');
+            $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
+            context.partial("agregar_suscripcion.php", function() {});
+            $("btnMenuAddSuscripcion").addClass("active");
+        });
+
+
+        this.get('#/VerSuscripcion', function(context) {
+            context.app.swap('');
+            $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
+            context.partial("agregar_suscripcion.php", function() {});
+            $("btnMenuAddVerSuscripcion").addClass("active");
+        });
              
 
 

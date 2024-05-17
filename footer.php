@@ -15,7 +15,7 @@
 <!--end::Vendors Javascript-->
 <!--begin::Custom Javascript(used for this page only)-->
 
-<! --begin:: para cargar los archivos js-->
+<!--begin:: para cargar los archivos js-->
 
 <!--end::Custom Javascript-->
 <!--end::Javascript-->
