@@ -24,6 +24,12 @@ include('header.php');
             context.partial("modulos/cuenta.php", function() {});
             $("#btnMenuCuenta").addClass("active");
         });
+        this.get('#/editCuenta', function(context) {
+            context.app.swap('');
+            $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
+            context.partial("editar_cuenta.php", function() {});
+            $("#btnMenuConfiguraCuenta").addClass("active");
+        });
 
         this.get('#/productos', function(context) {
             context.app.swap('');
@@ -43,20 +49,21 @@ include('header.php');
             context.partial("agregar_categoria.php", function() {});
             $("#btnMenuAddCategoria").addClass("active");
         });
-        this.get('#/agregarSuscripcion', function(context) {
+
+        this.get('#/ventas', function(context) {
             context.app.swap('');
             $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
-            context.partial("agregar_suscripcion.php", function() {});
-            $("btnMenuAddSuscripcion").addClass("active");
+            context.partial("ver_suscripciones.php", function() {});
+            $("#btnMenuSuspVendidas").addClass("active");
         });
-
-
-        this.get('#/VerSuscripcion', function(context) {
+        this.get('#/inventario', function(context) {
             context.app.swap('');
             $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
-            context.partial("agregar_suscripcion.php", function() {});
-            $("btnMenuAddVerSuscripcion").addClass("active");
+            context.partial("inventario.php", function() {});
+            $("#btnMenuVerInventario").addClass("active");
         });
+      
+      
              
 
 

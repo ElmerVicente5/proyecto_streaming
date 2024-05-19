@@ -19,6 +19,7 @@
     <!--begin::Vendor Stylesheets(used for this page only)-->
     <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    
     <!--end::Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
     <link href="assets/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css" />
@@ -411,16 +412,7 @@
                                     <!--begin:Menu sub-->
                                     <div class="menu-sub menu-sub-accordion">
                                         <!--begin:Menu item-->
-                                       <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link " id="btnMenuCuenta" href="#/cuenta">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Cuenta</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
+                                      
                                         <!--end:Menu item-->
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
@@ -430,6 +422,16 @@
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
                                                 <span class="menu-title">Iniciar Sesion</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <div class="menu-item">
+                                            <!--begin:Menu link-->
+                                            <a class="menu-link " id="btnMenuCuenta" href="#/cuenta">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">Cuenta</span>
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
@@ -445,7 +447,7 @@
                                         </div>
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnMenuConfiguraCuenta" href="#">
+                                            <a class="menu-link" id="btnMenuConfiguraCuenta" href="#/editCuenta">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
@@ -453,7 +455,7 @@
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
-                                        
+                                        <!--end:Menu item-->                                          
                                        
                                     </div>
                                     <!--end:Menu sub-->
@@ -474,17 +476,7 @@
                                     <!--begin:Menu sub-->
                                     <div class="menu-sub menu-sub-accordion">
                                         <!--begin:Menu item-->
-                                       <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link " id="btnMenuVentas" href="#/ventas">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">ventas</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
-                                        <!--end:Menu item-->
+                                       
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
@@ -517,56 +509,65 @@
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnMenuAddSuscripcion" href="#/agregarSuscripcion">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Agregar Suscripcion</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnMenuAddVerSuscripcion" href="#/VerSuscripcion">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Ver Suscripcion</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
-
-
-
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnMenuReportes" href="#">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">reportes</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
-                                        <!--end:Menu item-->
-                                        <!--begin:Menu item-->
-                                       
-                                        
-                                        <!--end:Menu item-->
-                                        <!--begin:Menu item-->
-                                        
-                                        <!--end:Menu item-->
-                                        <!--begin:Menu item-->
-                                        <
-                                        <!--end:Menu item-->
+                
                                        
                                     </div>
                                     <!--end:Menu sub-->
                                 </div>
-                                
+                                <div  data-kt-menu-trigger="click" class="menu-item here menu-accordion hover show">
+                                    <!--begin:Menu link-->
+                                    <span class="menu-link">
+                                        <span class="menu-icon">
+                                            <i class="ki-duotone ki-abstract-26 fs-2">
+                                                <span class="path1"></span>
+                                                <span class="path2"></span>
+                                            </i>
+                                        </span>
+                                        <span class="menu-title">REPORTES</span>
+                                        <span class="menu-arrow"></span>
+                                    </span>
+                                    <!--end:Menu link-->
+                                    <!--begin:Menu sub-->
+                                    <div class="menu-sub menu-sub-accordion">
+                                        <!--begin:Menu item-->
+                                       <div class="menu-item">
+                                            <!--begin:Menu link-->
+                                            <a class="menu-link " id="btnMenuSuspVendidas" href="#/ventas">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">suscripciones vendidas</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        <!--end:Menu item-->
+                                        <!--begin:Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin:Menu link-->
+                                            <a class="menu-link" id="btnMenuVerInventario" href="#/inventario">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">ver inventario</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <!--begin:Menu link-->
+                                            <a class="menu-link" id="btnMenuTickets" href="#/tickets">
+                                                <span class="menu-bullet">
+                                                    <span class="bullet bullet-dot"></span>
+                                                </span>
+                                                <span class="menu-title">Tickets</span>
+                                            </a>
+                                            <!--end:Menu link-->
+                                        </div>
+                                        
+                                       
+                                    </div>
+                                    <!--end:Menu sub-->
+                                </div>
                                 
                             </div>
                             <!--end::Sidebar menu-->
@@ -585,36 +586,7 @@
                    
                 <!--end::Main-->
 
-                <!--begin::Footer-->
-                <div id="kt_app_footer" class="app-footer d-none">
-                    <!--begin::Footer container-->
-                    <div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
-                        <!--begin::Copyright-->
-                        <div class="text-gray-900 order-2 order-md-1">
-                            <span class="text-muted fw-semibold me-1">2024©</span>
-                            <a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
-                        </div>
-                        <!--end::Copyright-->
-                        <!--begin::Menu-->
-                        <ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
-                            <li class="menu-item">
-                                <a href="https://keenthemes.com" target="_blank" class="menu-link px-2">About</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="https://1.envato.market/EA4JP" target="_blank" class="menu-link px-2">Purchase</a>
-                            </li>
-                        </ul>
-                        <!--end::Menu-->
-                    </div>
-                    <!--end::Footer container-->
-                </div>
-                <!--end::Footer-->
-
-
-                
+                              
             </div>
             <!--end::Wrapper-->
         </div>
