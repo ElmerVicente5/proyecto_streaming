@@ -19,6 +19,7 @@
     <!--begin::Vendor Stylesheets(used for this page only)-->
     <link href="assets/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
     <link href="assets/plugins/custom/datatables/datatables.bundle.css" rel="stylesheet" type="text/css" />
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
     
     <!--end::Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->

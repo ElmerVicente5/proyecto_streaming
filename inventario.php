@@ -17,7 +17,7 @@
 														<span class="path1"></span>
 														<span class="path2"></span>
 													</i>
-													<input type="text" data-kt-ecommerce-product-filter="search" class="form-control form-control-solid w-250px ps-12" placeholder="Search Product">
+													<input type="text" data-kt-ecommerce-product-filter="search" class="form-control form-control-solid w-250px ps-12" placeholder="Search Product" />
 												</div>
 												<!--end::Search-->
 											</div>
@@ -26,13 +26,13 @@
 											<div class="card-toolbar flex-row-fluid justify-content-end gap-5">
 												<div class="w-100 mw-150px">
 													<!--begin::Select2-->
-													<select class="form-select form-select-solid select2-hidden-accessible" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status" data-select2-id="select2-data-9-yxpn" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
-														<option data-select2-id="select2-data-11-kaxp"></option>
+													<select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Status" data-kt-ecommerce-product-filter="status">
+														<option></option>
 														<option value="all">All</option>
 														<option value="published">Published</option>
 														<option value="scheduled">Scheduled</option>
 														<option value="inactive">Inactive</option>
-													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-10-9ujf" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select form-select-solid" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-k934-container" aria-controls="select2-k934-container"><span class="select2-selection__rendered" id="select2-k934-container" role="textbox" aria-readonly="true" title="Status"><span class="select2-selection__placeholder">Status</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+													</select>
 													<!--end::Select2-->
 												</div>
 												<!--begin::Add product-->
@@ -45,24 +45,28 @@
 										<!--begin::Card body-->
 										<div class="card-body pt-0">
 											<!--begin::Table-->
-											<div id="kt_ecommerce_products_table_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer"><div id="" class="table-responsive"><table class="table align-middle table-row-dashed fs-6 gy-5 dataTable" id="kt_ecommerce_products_table" style="width: 1059.9px;"><colgroup><col style="width: 36.4px;"><col style="width: 251.3px;"><col style="width: 125.65px;"><col style="width: 137.475px;"><col style="width: 125.65px;"><col style="width: 125.65px;"><col style="width: 125.65px;"><col style="width: 132.125px;"></colgroup>
+											<table class="table align-middle table-row-dashed fs-6 gy-5" id="kt_ecommerce_products_table">
 												<thead>
-													<tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0" role="row"><th class="w-10px pe-2 dt-orderable-none" data-dt-column="0" rowspan="1" colspan="1" aria-label="
-															
-																
-															
-														"><span class="dt-column-title">
+													<tr class="text-start text-gray-500 fw-bold fs-7 text-uppercase gs-0">
+														<th class="w-10px pe-2">
 															<div class="form-check form-check-sm form-check-custom form-check-solid me-3">
-																<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_products_table .form-check-input" value="1">
+																<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_ecommerce_products_table .form-check-input" value="1" />
 															</div>
-														</span><span class="dt-column-order"></span></th><th class="min-w-200px dt-orderable-asc dt-orderable-desc" data-dt-column="1" rowspan="1" colspan="1" aria-label="Product: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Product</span><span class="dt-column-order"></span></th><th class="text-end min-w-100px dt-type-numeric dt-orderable-asc dt-orderable-desc" data-dt-column="2" rowspan="1" colspan="1" aria-label="SKU: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">SKU</span><span class="dt-column-order"></span></th><th class="text-end min-w-70px dt-type-numeric dt-orderable-asc dt-orderable-desc" data-dt-column="3" rowspan="1" colspan="1" aria-label="Qty: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Qty</span><span class="dt-column-order"></span></th><th class="text-end min-w-100px dt-type-numeric dt-orderable-asc dt-orderable-desc" data-dt-column="4" rowspan="1" colspan="1" aria-label="Price: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Price</span><span class="dt-column-order"></span></th><th class="text-end min-w-100px dt-orderable-asc dt-orderable-desc" data-dt-column="5" rowspan="1" colspan="1" aria-label="Rating: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Rating</span><span class="dt-column-order"></span></th><th class="text-end min-w-100px dt-orderable-asc dt-orderable-desc" data-dt-column="6" rowspan="1" colspan="1" aria-label="Status: Activate to sort" tabindex="0"><span class="dt-column-title" role="button">Status</span><span class="dt-column-order"></span></th><th class="text-end min-w-70px dt-orderable-none" data-dt-column="7" rowspan="1" colspan="1" aria-label="Actions"><span class="dt-column-title">Actions</span><span class="dt-column-order"></span></th></tr>
+														</th>
+														<th class="min-w-200px">Product</th>
+														<th class="text-end min-w-100px">SKU</th>
+														<th class="text-end min-w-70px">Qty</th>
+														<th class="text-end min-w-100px">Price</th>
+														<th class="text-end min-w-100px">Rating</th>
+														<th class="text-end min-w-100px">Status</th>
+														<th class="text-end min-w-70px">Actions</th>
+													</tr>
 												</thead>
 												<tbody class="fw-semibold text-gray-600">
-
-												<tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -79,13 +83,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">02981006</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="42">
+														<td class="text-end pe-0" data-order="42">
 															<span class="fw-bold ms-3">42</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">236.00</td>
+														<td class="text-end pe-0">236</td>
 														<td class="text-end pe-0" data-order="rating-3">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -128,10 +132,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -148,13 +153,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">03921003</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="36">
+														<td class="text-end pe-0" data-order="36">
 															<span class="fw-bold ms-3">36</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">278.00</td>
+														<td class="text-end pe-0">278</td>
 														<td class="text-end pe-0" data-order="rating-4">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -197,10 +202,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -217,13 +223,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">03633008</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="43">
+														<td class="text-end pe-0" data-order="43">
 															<span class="fw-bold ms-3">43</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">290.00</td>
+														<td class="text-end pe-0">290</td>
 														<td class="text-end pe-0" data-order="rating-5">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -266,10 +272,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -286,13 +293,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">01810006</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="20">
+														<td class="text-end pe-0" data-order="20">
 															<span class="fw-bold ms-3">20</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">300.00</td>
+														<td class="text-end pe-0">300</td>
 														<td class="text-end pe-0" data-order="rating-3">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -335,10 +342,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -355,13 +363,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">02290007</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="17">
+														<td class="text-end pe-0" data-order="17">
 															<span class="fw-bold ms-3">17</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">53.00</td>
+														<td class="text-end pe-0">53</td>
 														<td class="text-end pe-0" data-order="rating-4">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -404,10 +412,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -424,13 +433,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">04848001</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="27">
+														<td class="text-end pe-0" data-order="27">
 															<span class="fw-bold ms-3">27</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">155.00</td>
+														<td class="text-end pe-0">155</td>
 														<td class="text-end pe-0" data-order="rating-4">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -473,10 +482,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -493,14 +503,14 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">02556003</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="5">
+														<td class="text-end pe-0" data-order="5">
 															<span class="badge badge-light-warning">Low stock</span>
 															<span class="fw-bold text-warning ms-3">5</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">101.00</td>
+														<td class="text-end pe-0">101</td>
 														<td class="text-end pe-0" data-order="rating-3">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -543,10 +553,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -563,13 +574,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">02495006</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="35">
+														<td class="text-end pe-0" data-order="35">
 															<span class="fw-bold ms-3">35</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">169.00</td>
+														<td class="text-end pe-0">169</td>
 														<td class="text-end pe-0" data-order="rating-5">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -612,10 +623,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -632,13 +644,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">04403001</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="16">
+														<td class="text-end pe-0" data-order="16">
 															<span class="fw-bold ms-3">16</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">109.00</td>
+														<td class="text-end pe-0">109</td>
 														<td class="text-end pe-0" data-order="rating-5">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -681,10 +693,11 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr><tr>
+													</tr>
+													<tr>
 														<td>
 															<div class="form-check form-check-sm form-check-custom form-check-solid">
-																<input class="form-check-input" type="checkbox" value="1">
+																<input class="form-check-input" type="checkbox" value="1" />
 															</div>
 														</td>
 														<td>
@@ -701,13 +714,13 @@
 																</div>
 															</div>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">
+														<td class="text-end pe-0">
 															<span class="fw-bold">04585006</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric" data-order="24">
+														<td class="text-end pe-0" data-order="24">
 															<span class="fw-bold ms-3">24</span>
 														</td>
-														<td class="text-end pe-0 dt-type-numeric">181.00</td>
+														<td class="text-end pe-0">181</td>
 														<td class="text-end pe-0" data-order="rating-3">
 															<div class="rating justify-content-end">
 																<div class="rating-label checked">
@@ -750,8 +763,2814 @@
 															</div>
 															<!--end::Menu-->
 														</td>
-													</tr></tbody>
-											<tfoot></tfoot></table></div><div id="" class="row"><div id="" class="col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start dt-toolbar"><div><select name="kt_ecommerce_products_table_length" aria-controls="kt_ecommerce_products_table" class="form-select form-select-solid form-select-sm" id="dt-length-1"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><label for="dt-length-1"></label></div></div><div id="" class="col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end"><div class="dt-paging paging_simple_numbers"><ul class="pagination"><li class="dt-paging-button page-item disabled"><a class="page-link previous" aria-controls="kt_ecommerce_products_table" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i class="previous"></i></a></li><li class="dt-paging-button page-item active"><a href="#" class="page-link" aria-controls="kt_ecommerce_products_table" aria-current="page" data-dt-idx="0" tabindex="0">1</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="kt_ecommerce_products_table" data-dt-idx="1" tabindex="0">2</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="kt_ecommerce_products_table" data-dt-idx="2" tabindex="0">3</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="kt_ecommerce_products_table" data-dt-idx="3" tabindex="0">4</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link" aria-controls="kt_ecommerce_products_table" data-dt-idx="4" tabindex="0">5</a></li><li class="dt-paging-button page-item"><a href="#" class="page-link next" aria-controls="kt_ecommerce_products_table" aria-label="Next" data-dt-idx="next" tabindex="0"><i class="next"></i></a></li></ul></div></div></div></div>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/11.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 11</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01325005</span>
+														</td>
+														<td class="text-end pe-0" data-order="14">
+															<span class="fw-bold ms-3">14</span>
+														</td>
+														<td class="text-end pe-0">70</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/12.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 12</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02281001</span>
+														</td>
+														<td class="text-end pe-0" data-order="4">
+															<span class="badge badge-light-warning">Low stock</span>
+															<span class="fw-bold text-warning ms-3">4</span>
+														</td>
+														<td class="text-end pe-0">276</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/13.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 13</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04797004</span>
+														</td>
+														<td class="text-end pe-0" data-order="39">
+															<span class="fw-bold ms-3">39</span>
+														</td>
+														<td class="text-end pe-0">226</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/14.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 14</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04456005</span>
+														</td>
+														<td class="text-end pe-0" data-order="28">
+															<span class="fw-bold ms-3">28</span>
+														</td>
+														<td class="text-end pe-0">121</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/15.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 15</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01847008</span>
+														</td>
+														<td class="text-end pe-0" data-order="42">
+															<span class="fw-bold ms-3">42</span>
+														</td>
+														<td class="text-end pe-0">277</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/16.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 16</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02170005</span>
+														</td>
+														<td class="text-end pe-0" data-order="25">
+															<span class="fw-bold ms-3">25</span>
+														</td>
+														<td class="text-end pe-0">49</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/17.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 17</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01266003</span>
+														</td>
+														<td class="text-end pe-0" data-order="47">
+															<span class="fw-bold ms-3">47</span>
+														</td>
+														<td class="text-end pe-0">23</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/18.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 18</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02631008</span>
+														</td>
+														<td class="text-end pe-0" data-order="27">
+															<span class="fw-bold ms-3">27</span>
+														</td>
+														<td class="text-end pe-0">168</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/19.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 19</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02803003</span>
+														</td>
+														<td class="text-end pe-0" data-order="11">
+															<span class="fw-bold ms-3">11</span>
+														</td>
+														<td class="text-end pe-0">127</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/20.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 20</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02464003</span>
+														</td>
+														<td class="text-end pe-0" data-order="8">
+															<span class="badge badge-light-warning">Low stock</span>
+															<span class="fw-bold text-warning ms-3">8</span>
+														</td>
+														<td class="text-end pe-0">81</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/21.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 21</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04536009</span>
+														</td>
+														<td class="text-end pe-0" data-order="30">
+															<span class="fw-bold ms-3">30</span>
+														</td>
+														<td class="text-end pe-0">240</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/22.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 22</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">03681008</span>
+														</td>
+														<td class="text-end pe-0" data-order="0">
+															<span class="badge badge-light-danger">Sold out</span>
+															<span class="fw-bold text-danger ms-3">0</span>
+														</td>
+														<td class="text-end pe-0">104</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/23.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 23</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01368005</span>
+														</td>
+														<td class="text-end pe-0" data-order="37">
+															<span class="fw-bold ms-3">37</span>
+														</td>
+														<td class="text-end pe-0">117</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/24.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 24</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02820008</span>
+														</td>
+														<td class="text-end pe-0" data-order="42">
+															<span class="fw-bold ms-3">42</span>
+														</td>
+														<td class="text-end pe-0">234</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/25.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 25</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01306009</span>
+														</td>
+														<td class="text-end pe-0" data-order="19">
+															<span class="fw-bold ms-3">19</span>
+														</td>
+														<td class="text-end pe-0">207</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/26.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 26</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02409009</span>
+														</td>
+														<td class="text-end pe-0" data-order="42">
+															<span class="fw-bold ms-3">42</span>
+														</td>
+														<td class="text-end pe-0">244</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/27.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 27</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02859008</span>
+														</td>
+														<td class="text-end pe-0" data-order="50">
+															<span class="fw-bold ms-3">50</span>
+														</td>
+														<td class="text-end pe-0">83</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/28.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 28</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04210004</span>
+														</td>
+														<td class="text-end pe-0" data-order="22">
+															<span class="fw-bold ms-3">22</span>
+														</td>
+														<td class="text-end pe-0">74</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/29.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 29</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">03193009</span>
+														</td>
+														<td class="text-end pe-0" data-order="24">
+															<span class="fw-bold ms-3">24</span>
+														</td>
+														<td class="text-end pe-0">10</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/30.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 30</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">03389004</span>
+														</td>
+														<td class="text-end pe-0" data-order="9">
+															<span class="badge badge-light-warning">Low stock</span>
+															<span class="fw-bold text-warning ms-3">9</span>
+														</td>
+														<td class="text-end pe-0">60</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/31.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 31</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04926004</span>
+														</td>
+														<td class="text-end pe-0" data-order="6">
+															<span class="badge badge-light-warning">Low stock</span>
+															<span class="fw-bold text-warning ms-3">6</span>
+														</td>
+														<td class="text-end pe-0">112</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/32.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 32</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02835001</span>
+														</td>
+														<td class="text-end pe-0" data-order="26">
+															<span class="fw-bold ms-3">26</span>
+														</td>
+														<td class="text-end pe-0">155</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/33.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 33</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">03904001</span>
+														</td>
+														<td class="text-end pe-0" data-order="49">
+															<span class="fw-bold ms-3">49</span>
+														</td>
+														<td class="text-end pe-0">190</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/34.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 34</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04522007</span>
+														</td>
+														<td class="text-end pe-0" data-order="12">
+															<span class="fw-bold ms-3">12</span>
+														</td>
+														<td class="text-end pe-0">267</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/35.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 35</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04412008</span>
+														</td>
+														<td class="text-end pe-0" data-order="39">
+															<span class="fw-bold ms-3">39</span>
+														</td>
+														<td class="text-end pe-0">221</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/36.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 36</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01892002</span>
+														</td>
+														<td class="text-end pe-0" data-order="13">
+															<span class="fw-bold ms-3">13</span>
+														</td>
+														<td class="text-end pe-0">217</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/37.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 37</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01155009</span>
+														</td>
+														<td class="text-end pe-0" data-order="48">
+															<span class="fw-bold ms-3">48</span>
+														</td>
+														<td class="text-end pe-0">236</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/38.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 38</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04623007</span>
+														</td>
+														<td class="text-end pe-0" data-order="29">
+															<span class="fw-bold ms-3">29</span>
+														</td>
+														<td class="text-end pe-0">52</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/39.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 39</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02913003</span>
+														</td>
+														<td class="text-end pe-0" data-order="12">
+															<span class="fw-bold ms-3">12</span>
+														</td>
+														<td class="text-end pe-0">170</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/40.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 40</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04592003</span>
+														</td>
+														<td class="text-end pe-0" data-order="15">
+															<span class="fw-bold ms-3">15</span>
+														</td>
+														<td class="text-end pe-0">40</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/41.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 41</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01413008</span>
+														</td>
+														<td class="text-end pe-0" data-order="14">
+															<span class="fw-bold ms-3">14</span>
+														</td>
+														<td class="text-end pe-0">76</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/42.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 42</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">01258004</span>
+														</td>
+														<td class="text-end pe-0" data-order="49">
+															<span class="fw-bold ms-3">49</span>
+														</td>
+														<td class="text-end pe-0">171</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/43.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 43</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">03720006</span>
+														</td>
+														<td class="text-end pe-0" data-order="39">
+															<span class="fw-bold ms-3">39</span>
+														</td>
+														<td class="text-end pe-0">28</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/44.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 44</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02773003</span>
+														</td>
+														<td class="text-end pe-0" data-order="30">
+															<span class="fw-bold ms-3">30</span>
+														</td>
+														<td class="text-end pe-0">80</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/45.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 45</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04735008</span>
+														</td>
+														<td class="text-end pe-0" data-order="43">
+															<span class="fw-bold ms-3">43</span>
+														</td>
+														<td class="text-end pe-0">111</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/46.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 46</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04981009</span>
+														</td>
+														<td class="text-end pe-0" data-order="43">
+															<span class="fw-bold ms-3">43</span>
+														</td>
+														<td class="text-end pe-0">168</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/47.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 47</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04683009</span>
+														</td>
+														<td class="text-end pe-0" data-order="49">
+															<span class="fw-bold ms-3">49</span>
+														</td>
+														<td class="text-end pe-0">292</td>
+														<td class="text-end pe-0" data-order="rating-4">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Scheduled">
+															<!--begin::Badges-->
+															<div class="badge badge-light-primary">Scheduled</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/48.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 48</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04682002</span>
+														</td>
+														<td class="text-end pe-0" data-order="25">
+															<span class="fw-bold ms-3">25</span>
+														</td>
+														<td class="text-end pe-0">288</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/49.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 49</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">04373001</span>
+														</td>
+														<td class="text-end pe-0" data-order="15">
+															<span class="fw-bold ms-3">15</span>
+														</td>
+														<td class="text-end pe-0">288</td>
+														<td class="text-end pe-0" data-order="rating-5">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Inactive">
+															<!--begin::Badges-->
+															<div class="badge badge-light-danger">Inactive</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="form-check form-check-sm form-check-custom form-check-solid">
+																<input class="form-check-input" type="checkbox" value="1" />
+															</div>
+														</td>
+														<td>
+															<div class="d-flex align-items-center">
+																<!--begin::Thumbnail-->
+																<a href="apps/ecommerce/catalog/edit-product.html" class="symbol symbol-50px">
+																	<span class="symbol-label" style="background-image:url(assets/media//stock/ecommerce/50.png);"></span>
+																</a>
+																<!--end::Thumbnail-->
+																<div class="ms-5">
+																	<!--begin::Title-->
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="text-gray-800 text-hover-primary fs-5 fw-bold" data-kt-ecommerce-product-filter="product_name">Product 50</a>
+																	<!--end::Title-->
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0">
+															<span class="fw-bold">02850007</span>
+														</td>
+														<td class="text-end pe-0" data-order="22">
+															<span class="fw-bold ms-3">22</span>
+														</td>
+														<td class="text-end pe-0">101</td>
+														<td class="text-end pe-0" data-order="rating-3">
+															<div class="rating justify-content-end">
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label checked">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+																<div class="rating-label">
+																	<i class="ki-duotone ki-star fs-6"></i>
+																</div>
+															</div>
+														</td>
+														<td class="text-end pe-0" data-order="Published">
+															<!--begin::Badges-->
+															<div class="badge badge-light-success">Published</div>
+															<!--end::Badges-->
+														</td>
+														<td class="text-end">
+															<a href="#" class="btn btn-sm btn-light btn-flex btn-center btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions 
+															<i class="ki-duotone ki-down fs-5 ms-1"></i></a>
+															<!--begin::Menu-->
+															<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-semibold fs-7 w-125px py-4" data-kt-menu="true">
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="apps/ecommerce/catalog/edit-product.html" class="menu-link px-3">Edit</a>
+																</div>
+																<!--end::Menu item-->
+																<!--begin::Menu item-->
+																<div class="menu-item px-3">
+																	<a href="#" class="menu-link px-3" data-kt-ecommerce-product-filter="delete_row">Delete</a>
+																</div>
+																<!--end::Menu item-->
+															</div>
+															<!--end::Menu-->
+														</td>
+													</tr>
+												</tbody>
+											</table>
 											<!--end::Table-->
 										</div>
 										<!--end::Card body-->
@@ -769,7 +3588,7 @@
 							<div class="app-container container-fluid d-flex flex-column flex-md-row flex-center flex-md-stack py-3">
 								<!--begin::Copyright-->
 								<div class="text-gray-900 order-2 order-md-1">
-									<span class="text-muted fw-semibold me-1">2024©</span>
+									<span class="text-muted fw-semibold me-1">2024&copy;</span>
 									<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
 								</div>
 								<!--end::Copyright-->
@@ -790,4 +3609,24 @@
 							<!--end::Footer container-->
 						</div>
 						<!--end::Footer-->
-					</div>
+</div>
+
+
+<!--end:::Main-->
+
+
+	<!--begin::Vendors Javascript(used for this page only)-->
+    <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
+		<!--end::Vendors Javascript-->
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="assets/js/custom/apps/ecommerce/catalog/products.js"></script>
+		<script src="assets/js/widgets.bundle.js"></script>
+		<script src="assets/js/custom/widgets.js"></script>
+		<script src="assets/js/custom/apps/chat/chat.js"></script>
+		<script src="assets/js/custom/utilities/modals/create-campaign.js"></script>
+		<script src="assets/js/custom/utilities/modals/users-search.js"></script>
+		<!--end::Custom Javascript-->
+		<script>
+			// Inicialización de Metronic
+			KTMenu.createInstances();
+		</script>
