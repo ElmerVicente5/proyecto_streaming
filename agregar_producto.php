@@ -15,7 +15,7 @@
 												<div class="card-header">
 													<!--begin::Card title-->
 													<div class="card-title">
-														<h2>Thumbnail</h2>
+														<h2>Miniatura</h2>
 													</div>
 													<!--end::Card title-->
 												</div>
@@ -61,7 +61,7 @@
 													</div>
 													<!--end::Image input-->
 													<!--begin::Description-->
-													<div class="text-muted fs-7">Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted</div>
+													<div class="text-muted fs-7">Configure la imagen en miniatura del producto. Sólo se aceptan archivos de imagen *.png, *.jpg, *.jpeg</div>
 													<!--end::Description-->
 												</div>
 												<!--end::Card body-->
@@ -74,7 +74,7 @@
 												<div class="card-header">
 													<!--begin::Card title-->
 													<div class="card-title">
-														<h2>Product Details</h2>
+														<h2>Detalles de producto</h2>
 													</div>
 													<!--end::Card title-->
 												</div>
@@ -83,10 +83,10 @@
 												<div class="card-body pt-0">
 													<!--begin::Input group-->
 													<!--begin::Label-->
-													<label class="form-label">Categories</label>
+													<label class="form-label">Categorías</label>
 													<!--end::Label-->
 													<!--begin::Select2-->
-													<select class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-placeholder="Select an option" data-allow-clear="true" multiple="" data-select2-id="select2-data-11-x5az" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
+													<select class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-placeholder="Seleccione una opción" data-allow-clear="true" multiple="" data-select2-id="select2-data-11-x5az" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
 														<option></option>
 														<option value="Computers">Computers</option>
 														<option value="Watches">Watches</option>
@@ -98,19 +98,19 @@
 														<option value="Handbags">Handbags</option>
 														<option value="Wines">Wines</option>
 														<option value="Sandals">Sandals</option>
-													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-12-2yt1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-4a7k-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-4a7k-container" placeholder="Select an option" style="width: 100%;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-12-2yt1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-4a7k-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-4a7k-container" placeholder="Seleccione una opción" style="width: 100%;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 													<!--end::Select2-->
 													<!--begin::Description-->
-													<div class="text-muted fs-7 mb-7">Add product to a category.</div>
+													<div class="text-muted fs-7 mb-7">Agregar producto a una categoría.</div>
 													<!--end::Description-->
 													<!--end::Input group-->
 													<!--begin::Button-->
 													<a href="apps/ecommerce/catalog/add-category.html" class="btn btn-light-primary btn-sm mb-10">
-													<i class="ki-duotone ki-plus fs-2"></i>Create new category</a>
+													<i class="ki-duotone ki-plus fs-2"></i>Crear nueva categoría</a>
 													<!--end::Button-->
 													<!--begin::Input group-->
 													<!--begin::Label-->
-													<label class="form-label d-block">Tags</label>
+													<label class="form-label d-block">Etiquetas</label>
 													<!--end::Label-->
 													<!--begin::Input-->
 													<tags class="tagify form-control mb-2 tagify--noTags tagify--empty" tabindex="-1">
@@ -119,7 +119,7 @@
         </tags><input id="kt_ecommerce_add_product_tags" name="kt_ecommerce_add_product_tags" class="form-control mb-2" value="" tabindex="-1">
 													<!--end::Input-->
 													<!--begin::Description-->
-													<div class="text-muted fs-7">Add tags to a product.</div>
+													<div class="text-muted fs-7">Agregar etiquetas a un producto.</div>
 													<!--end::Description-->
 													<!--end::Input group-->
 												</div>
@@ -140,7 +140,7 @@
 												<!--end:::Tab item-->
 												<!--begin:::Tab item-->
 												<li class="nav-item" role="presentation">
-													<a class="nav-link text-active-primary pb-4" data-bs-toggle="tab" href="#kt_ecommerce_add_product_advanced" aria-selected="false" tabindex="-1" role="tab">Advanced</a>
+													<a class="nav-link text-active-primary pb-4" data-bs-toggle="tab" href="#kt_ecommerce_add_product_advanced" aria-selected="false" tabindex="-1" role="tab">Avanzado</a>
 												</li>
 												<!--end:::Tab item-->
 											</ul>
@@ -164,26 +164,26 @@
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">Product Name</label>
+																	<label class="required form-label">Nombre del producto</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
-																	<input type="text" name="product_name" class="form-control mb-2" placeholder="Product name" value="">
+																	<input type="text" name="product_name" class="form-control mb-2" placeholder="Nombre del producto" value="">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">A product name is required and recommended to be unique.</div>
+																	<div class="text-muted fs-7">Se requiere y se recomienda que un nombre de producto sea único.</div>
 																	<!--end::Description-->
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div>
 																	<!--begin::Label-->
-																	<label class="form-label">Description</label>
+																	<label class="form-label">Descripción</label>
 																	<!--end::Label-->
 																	<!--begin::Editor-->
-																	<div class="ql-toolbar ql-snow"><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label" tabindex="0" role="button" aria-expanded="false" aria-controls="ql-picker-options-0"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options" aria-hidden="true" tabindex="-1" id="ql-picker-options-0"><span tabindex="0" role="button" class="ql-picker-item" data-value="1"></span><span tabindex="0" role="button" class="ql-picker-item" data-value="2"></span><span tabindex="0" role="button" class="ql-picker-item ql-selected"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option selected="selected"></option></select></span><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button></span><span class="ql-formats"><button type="button" class="ql-image"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span></div><div id="kt_ecommerce_add_product_description" name="kt_ecommerce_add_product_description" class="min-h-200px mb-2 ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your text here..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+																	<div class="ql-toolbar ql-snow"><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label" tabindex="0" role="button" aria-expanded="false" aria-controls="ql-picker-options-0"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options" aria-hidden="true" tabindex="-1" id="ql-picker-options-0"><span tabindex="0" role="button" class="ql-picker-item" data-value="1"></span><span tabindex="0" role="button" class="ql-picker-item" data-value="2"></span><span tabindex="0" role="button" class="ql-picker-item ql-selected"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option selected="selected"></option></select></span><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button></span><span class="ql-formats"><button type="button" class="ql-image"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span></div><div id="kt_ecommerce_add_product_description" name="kt_ecommerce_add_product_description" class="min-h-200px mb-2 ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Escribe tu texto aquí..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
 																	<!--end::Editor-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set a description to the product for better visibility.</div>
+																	<div class="text-muted fs-7">Establezca una descripción del producto para una mejor viabilidad.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
@@ -196,7 +196,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Media</h2>
+																	<h2>Medios de comunicación</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -216,8 +216,8 @@
 																			<!--end::Icon-->
 																			<!--begin::Info-->
 																			<div class="ms-4">
-																				<h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here or click to upload.</h3>
-																				<span class="fs-7 fw-semibold text-gray-500">Upload up to 10 files</span>
+																				<h3 class="fs-5 fw-bold text-gray-900 mb-1">Suelte los archivos aquí o haga clic para cargarlos.</h3>
+																				<span class="fs-7 fw-semibold text-gray-500">Sube hasta 10 archivos</span>
 																			</div>
 																			<!--end::Info-->
 																		</div>
@@ -226,7 +226,7 @@
 																</div>
 																<!--end::Input group-->
 																<!--begin::Description-->
-																<div class="text-muted fs-7">Set the product media gallery.</div>
+																<div class="text-muted fs-7">Configure la galería de medios del producto.</div>
 																<!--end::Description-->
 															</div>
 															<!--end::Card header-->
@@ -237,7 +237,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Pricing</h2>
+																	<h2>Precios</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -246,27 +246,21 @@
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">Base Price</label>
+																	<label class="required form-label">Precio base</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
-																	<input type="text" name="price" class="form-control mb-2" placeholder="Product price" value="">
+																	<input type="text" name="price" class="form-control mb-2" placeholder="Precio del producto" value="">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set the product price.</div>
+																	<div class="text-muted fs-7">Establecer el precio del producto.</div>
 																	<!--end::Description-->
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="fv-row mb-10">
 																	<!--begin::Label-->
-																	<label class="fs-6 fw-semibold mb-2">Discount Type 
-																	<span class="ms-1" data-bs-toggle="tooltip" aria-label="Select a discount type that will be applied to this product" data-bs-original-title="Select a discount type that will be applied to this product" data-kt-initialized="1">
-																		<i class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																			<span class="path1"></span>
-																			<span class="path2"></span>
-																			<span class="path3"></span>
-																		</i>
-																	</span></label>
+																	<label class="fs-6 fw-semibold mb-2">Tipo de descuento 
+																	</label>
 																	<!--End::Label-->
 																	<!--begin::Row-->
 																	<div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9" data-kt-buttons="true" data-kt-buttons-target="[data-kt-button='true']" data-kt-initialized="1">
@@ -281,7 +275,7 @@
 																				<!--end::Radio-->
 																				<!--begin::Info-->
 																				<span class="ms-5">
-																					<span class="fs-4 fw-bold text-gray-800 d-block">No Discount</span>
+																					<span class="fs-4 fw-bold text-gray-800 d-block">Sin descuento</span>
 																				</span>
 																				<!--end::Info-->
 																			</label>
@@ -299,7 +293,7 @@
 																				<!--end::Radio-->
 																				<!--begin::Info-->
 																				<span class="ms-5">
-																					<span class="fs-4 fw-bold text-gray-800 d-block">Percentage %</span>
+																					<span class="fs-4 fw-bold text-gray-800 d-block">Porcentaje %</span>
 																				</span>
 																				<!--end::Info-->
 																			</label>
@@ -317,7 +311,7 @@
 																				<!--end::Radio-->
 																				<!--begin::Info-->
 																				<span class="ms-5">
-																					<span class="fs-4 fw-bold text-gray-800 d-block">Fixed Price</span>
+																					<span class="fs-4 fw-bold text-gray-800 d-block">Precio fijo</span>
 																				</span>
 																				<!--end::Info-->
 																			</label>
@@ -375,7 +369,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Inventory</h2>
+																	<h2>Inventario</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -384,58 +378,58 @@
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">SKU</label>
+																	<label class="required form-label">Código de producto</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
-																	<input type="text" name="sku" class="form-control mb-2" placeholder="SKU Number" value="">
+																	<input type="text" name="sku" class="form-control mb-2" placeholder="Código de producto" value="">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Enter the product SKU.</div>
+																	<div class="text-muted fs-7">Ingrese el código del producto.</div>
 																	<!--end::Description-->
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">Barcode</label>
+																	<label class="required form-label">Código de barras</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
-																	<input type="text" name="barcode" class="form-control mb-2" placeholder="Barcode Number" value="">
+																	<input type="text" name="barcode" class="form-control mb-2" placeholder="Código de barras" value="">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Enter the product barcode number.</div>
+																	<div class="text-muted fs-7">Ingrese el número del código de barras del producto.</div>
 																	<!--end::Description-->
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">Quantity</label>
+																	<label class="required form-label">Cantidad</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
 																	<div class="d-flex gap-3">
-																		<input type="number" name="shelf" class="form-control mb-2" placeholder="On shelf" value="">
-																		<input type="number" name="warehouse" class="form-control mb-2" placeholder="In warehouse">
+																		<input type="number" name="shelf" class="form-control mb-2" placeholder="En el estante" value="">
+																		<input type="number" name="warehouse" class="form-control mb-2" placeholder="En almacén">
 																	</div>
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Enter the product quantity.</div>
+																	<div class="text-muted fs-7">Ingrese la cantidad del producto.</div>
 																	<!--end::Description-->
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="fv-row">
 																	<!--begin::Label-->
-																	<label class="form-label">Allow Backorders</label>
+																	<label class="form-label">Permitir pedidos pendientes</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
 																	<div class="form-check form-check-custom form-check-solid mb-2">
 																		<input class="form-check-input" type="checkbox" value="">
-																		<label class="form-check-label">Yes</label>
+																		<label class="form-check-label">Sí</label>
 																	</div>
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Allow customers to purchase products that are out of stock.</div>
+																	<div class="text-muted fs-7">Permitir a los clientes comprar productos que están agotados.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
@@ -448,7 +442,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Variations</h2>
+																	<h2>Variaciones</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -457,7 +451,7 @@
 																<!--begin::Input group-->
 																<div class="" data-kt-ecommerce-catalog-add-product="auto-options">
 																	<!--begin::Label-->
-																	<label class="form-label">Add Product Variations</label>
+																	<label class="form-label">Agregar variaciones de productos</label>
 																	<!--end::Label-->
 																	<!--begin::Repeater-->
 																	<div id="kt_ecommerce_add_product_options">
@@ -467,17 +461,17 @@
 																				<div data-repeater-item="" class="form-group d-flex flex-wrap align-items-center gap-5">
 																					<!--begin::Select2-->
 																					<div class="w-100 w-md-200px">
-																						<select class="form-select select2-hidden-accessible" name="kt_ecommerce_add_product_options[0][product_option]" data-placeholder="Select a variation" data-kt-ecommerce-catalog-add-product="product_option" data-select2-id="select2-data-138-jz2c" tabindex="-1" aria-hidden="true">
+																						<select class="form-select select2-hidden-accessible" name="kt_ecommerce_add_product_options[0][product_option]" data-placeholder="Seleccionar una variación" data-kt-ecommerce-catalog-add-product="product_option" data-select2-id="select2-data-138-jz2c" tabindex="-1" aria-hidden="true">
 																							<option data-select2-id="select2-data-140-mqxi"></option>
 																							<option value="color">Color</option>
 																							<option value="size">Size</option>
 																							<option value="material">Material</option>
 																							<option value="style">Style</option>
-																						</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-139-gzre" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kt_ecommerce_add_product_options0product_option-yy-container" aria-controls="select2-kt_ecommerce_add_product_options0product_option-yy-container"><span class="select2-selection__rendered" id="select2-kt_ecommerce_add_product_options0product_option-yy-container" role="textbox" aria-readonly="true" title="Select a variation"><span class="select2-selection__placeholder">Select a variation</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+																						</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-139-gzre" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kt_ecommerce_add_product_options0product_option-yy-container" aria-controls="select2-kt_ecommerce_add_product_options0product_option-yy-container"><span class="select2-selection__rendered" id="select2-kt_ecommerce_add_product_options0product_option-yy-container" role="textbox" aria-readonly="true" title="Seleccionar una variación"><span class="select2-selection__placeholder">Seleccionar una variación</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 																					</div>
 																					<!--end::Select2-->
 																					<!--begin::Input-->
-																					<input type="text" class="form-control mw-100 w-200px" name="kt_ecommerce_add_product_options[0][product_option_value]" placeholder="Variation">
+																					<input type="text" class="form-control mw-100 w-200px" name="kt_ecommerce_add_product_options[0][product_option_value]" placeholder="Variación">
 																					<!--end::Input-->
 																					<button type="button" data-repeater-delete="" class="btn btn-sm btn-icon btn-light-danger">
 																						<i class="ki-duotone ki-cross fs-1">
@@ -492,7 +486,7 @@
 																		<!--begin::Form group-->
 																		<div class="form-group mt-5">
 																			<button type="button" data-repeater-create="" class="btn btn-sm btn-light-primary">
-																			<i class="ki-duotone ki-plus fs-2"></i>Add another variation</button>
+																			<i class="ki-duotone ki-plus fs-2"></i>Añade otra variación</button>
 																		</div>
 																		<!--end::Form group-->
 																	</div>
@@ -508,7 +502,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Shipping</h2>
+																	<h2>Envío</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -519,11 +513,11 @@
 																	<!--begin::Input-->
 																	<div class="form-check form-check-custom form-check-solid mb-2">
 																		<input class="form-check-input" type="checkbox" id="kt_ecommerce_add_product_shipping_checkbox" value="1">
-																		<label class="form-check-label">This is a physical product</label>
+																		<label class="form-check-label">Este es un producto físico.</label>
 																	</div>
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set if the product is a physical or digital item. Physical products may require shipping.</div>
+																	<div class="text-muted fs-7">Establece si el producto es un artículo físico o digital. Los productos físicos pueden requerir envío.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
@@ -570,7 +564,7 @@
 															<!--begin::Card header-->
 															<div class="card-header">
 																<div class="card-title">
-																	<h2>Meta Options</h2>
+																	<h2>Meta Opciones</h2>
 																</div>
 															</div>
 															<!--end::Card header-->
@@ -579,40 +573,40 @@
 																<!--begin::Input group-->
 																<div class="mb-10">
 																	<!--begin::Label-->
-																	<label class="form-label">Meta Tag Title</label>
+																	<label class="form-label">Título de la meta etiqueta</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
-																	<input type="text" class="form-control mb-2" name="meta_title" placeholder="Meta tag name">
+																	<input type="text" class="form-control mb-2" name="meta_title" placeholder="Nombre de la meta etiqueta">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set a meta tag title. Recommended to be simple and precise keywords.</div>
+																	<div class="text-muted fs-7">Establece un título de meta etiqueta. Se recomienda que sean palabras clave simples y precisas.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="mb-10">
 																	<!--begin::Label-->
-																	<label class="form-label">Meta Tag Description</label>
+																	<label class="form-label">Descripción de meta etiqueta</label>
 																	<!--end::Label-->
 																	<!--begin::Editor-->
-																	<div class="ql-toolbar ql-snow"><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label" tabindex="0" role="button" aria-expanded="false" aria-controls="ql-picker-options-1"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options" aria-hidden="true" tabindex="-1" id="ql-picker-options-1"><span tabindex="0" role="button" class="ql-picker-item" data-value="1"></span><span tabindex="0" role="button" class="ql-picker-item" data-value="2"></span><span tabindex="0" role="button" class="ql-picker-item ql-selected"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option selected="selected"></option></select></span><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button></span><span class="ql-formats"><button type="button" class="ql-image"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span></div><div id="kt_ecommerce_add_product_meta_description" name="kt_ecommerce_add_product_meta_description" class="min-h-100px mb-2 ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Type your text here..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
+																	<div class="ql-toolbar ql-snow"><span class="ql-formats"><span class="ql-header ql-picker"><span class="ql-picker-label" tabindex="0" role="button" aria-expanded="false" aria-controls="ql-picker-options-1"><svg viewBox="0 0 18 18"> <polygon class="ql-stroke" points="7 11 9 13 11 11 7 11"></polygon> <polygon class="ql-stroke" points="7 7 9 5 11 7 7 7"></polygon> </svg></span><span class="ql-picker-options" aria-hidden="true" tabindex="-1" id="ql-picker-options-1"><span tabindex="0" role="button" class="ql-picker-item" data-value="1"></span><span tabindex="0" role="button" class="ql-picker-item" data-value="2"></span><span tabindex="0" role="button" class="ql-picker-item ql-selected"></span></span></span><select class="ql-header" style="display: none;"><option value="1"></option><option value="2"></option><option selected="selected"></option></select></span><span class="ql-formats"><button type="button" class="ql-bold"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button><button type="button" class="ql-italic"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button><button type="button" class="ql-underline"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button></span><span class="ql-formats"><button type="button" class="ql-image"><svg viewBox="0 0 18 18"> <rect class="ql-stroke" height="10" width="12" x="3" y="4"></rect> <circle class="ql-fill" cx="6" cy="7" r="1"></circle> <polyline class="ql-even ql-fill" points="5 12 5 11 7 9 8 10 11 7 13 9 13 12 5 12"></polyline> </svg></button><button type="button" class="ql-code-block"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button></span></div><div id="kt_ecommerce_add_product_meta_description" name="kt_ecommerce_add_product_meta_description" class="min-h-100px mb-2 ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Escribe tu texto aquí..."><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" rel="noopener noreferrer" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div></div>
 																	<!--end::Editor-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set a meta tag description to the product for increased SEO ranking.</div>
+																	<div class="text-muted fs-7">Establezca una descripción de meta etiqueta para el producto y aumentar la clasificación SEO.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div>
 																	<!--begin::Label-->
-																	<label class="form-label">Meta Tag Keywords</label>
+																	<label class="form-label">Palabras clave de meta etiqueta</label>
 																	<!--end::Label-->
 																	<!--begin::Editor-->
 																	<input id="kt_ecommerce_add_product_meta_keywords" name="kt_ecommerce_add_product_meta_keywords" class="form-control mb-2">
 																	<!--end::Editor-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set a list of keywords that the product is related to. Separate the keywords by adding a comma 
-																	<code>,</code>between each keyword.</div>
+																	<div class="text-muted fs-7">Establezca una lista de palabras clave con las que está relacionado el producto. Separe las palabras clave agregando una coma 
+																	<code>,</code>entre cada palabra clave.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
@@ -627,11 +621,11 @@
 											<!--end::Tab content-->
 											<div class="d-flex justify-content-end">
 												<!--begin::Button-->
-												<a href="apps/ecommerce/catalog/products.html" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">Cancel</a>
+												<a href="apps/ecommerce/catalog/products.html" id="kt_ecommerce_add_product_cancel" class="btn btn-light me-5">Cancelar</a>
 												<!--end::Button-->
 												<!--begin::Button-->
 												<button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
-													<span class="indicator-label">Save Changes</span>
+													<span class="indicator-label">Guardar cambios</span>
 													<span class="indicator-progress">Please wait... 
 													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 												</button>
@@ -656,7 +650,7 @@
 								<ul class="menu menu-gray-600 menu-hover-primary fw-semibold order-1">
 									
 									<li class="menu-item">
-										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Support</a>
+										<a href="https://devs.keenthemes.com" target="_blank" class="menu-link px-2">Apoyo</a>
 									</li>
 									
 								</ul>

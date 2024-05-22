@@ -202,20 +202,20 @@
 															<div class="row mb-6">
 																<div class="col-lg-6 mb-4 mb-lg-0">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
-																		<label for="emailaddress" class="form-label fs-6 fw-bold mb-3">Enter New Email Address</label>
+																		<label for="emailaddress" class="form-label fs-6 fw-bold mb-3">Ingrese una nueva dirección de correo electrónico</label>
 																		<input type="email" class="form-control form-control-lg form-control-solid" id="emailaddress" placeholder="Email Address" name="emailaddress" value="support@keenthemes.com">
 																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																</div>
 																<div class="col-lg-6">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
-																		<label for="confirmemailpassword" class="form-label fs-6 fw-bold mb-3">Confirm Password</label>
+																		<label for="confirmemailpassword" class="form-label fs-6 fw-bold mb-3">Confirmar contraseña</label>
 																		<input type="password" class="form-control form-control-lg form-control-solid" name="confirmemailpassword" id="confirmemailpassword">
 																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																</div>
 															</div>
 															<div class="d-flex">
-																<button id="kt_signin_submit" type="button" class="btn btn-primary me-2 px-6">Update Email</button>
-																<button id="kt_signin_cancel" type="button" class="btn btn-color-gray-500 btn-active-light-primary px-6">Cancel</button>
+																<button id="kt_signin_submit" type="button" class="btn btn-primary me-2 px-6">Actualizar correo electrónico</button>
+																<button id="kt_signin_cancel" type="button" class="btn btn-color-gray-500 btn-active-light-primary px-6">Cancelar</button>
 															</div>
 														</form>
 														<!--end::Form-->
@@ -246,27 +246,27 @@
 															<div class="row mb-1">
 																<div class="col-lg-4">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
-																		<label for="currentpassword" class="form-label fs-6 fw-bold mb-3">Current Password</label>
+																		<label for="currentpassword" class="form-label fs-6 fw-bold mb-3">Contraseña actual</label>
 																		<input type="password" class="form-control form-control-lg form-control-solid" name="currentpassword" id="currentpassword">
 																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																</div>
 																<div class="col-lg-4">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
-																		<label for="newpassword" class="form-label fs-6 fw-bold mb-3">New Password</label>
+																		<label for="newpassword" class="form-label fs-6 fw-bold mb-3">Nueva contraseña</label>
 																		<input type="password" class="form-control form-control-lg form-control-solid" name="newpassword" id="newpassword">
 																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																</div>
 																<div class="col-lg-4">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
-																		<label for="confirmpassword" class="form-label fs-6 fw-bold mb-3">Confirm New Password</label>
+																		<label for="confirmpassword" class="form-label fs-6 fw-bold mb-3">Confirmar nueva contraseña</label>
 																		<input type="password" class="form-control form-control-lg form-control-solid" name="confirmpassword" id="confirmpassword">
 																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																</div>
 															</div>
-															<div class="form-text mb-5">Password must be at least 8 character and contain symbols</div>
+															<div class="form-text mb-5">La contraseña debe tener al menos 8 caracteres y contener símbolos.</div>
 															<div class="d-flex">
-																<button id="kt_password_submit" type="button" class="btn btn-primary me-2 px-6">Update Password</button>
-																<button id="kt_password_cancel" type="button" class="btn btn-color-gray-500 btn-active-light-primary px-6">Cancel</button>
+																<button id="kt_password_submit" type="button" class="btn btn-primary me-2 px-6">Actualizar contraseña</button>
+																<button id="kt_password_cancel" type="button" class="btn btn-color-gray-500 btn-active-light-primary px-6">Cancelar</button>
 															</div>
 														</form>
 														<!--end::Form-->
