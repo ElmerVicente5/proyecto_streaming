@@ -13,7 +13,7 @@ License: For each use you must have a valid license purchased only from above li
 <html lang="en">
 	<!--begin::Head-->
 	<head>
-		<title>Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes</title>
+		<title>Tecunes QQQ</title>
 		<meta charset="utf-8" />
 		<meta name="description" content="The most advanced Bootstrap 5 Admin Theme with 40 unique prebuilt layouts on Themeforest trusted by 100,000 beginners and professionals. Multi-demo, Dark Mode, RTL support and complete React, Angular, Vue, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel versions. Grab your copy now and get life-time updates for free." />
 		<meta name="keywords" content="metronic, bootstrap, bootstrap 5, angular, VueJs, React, Asp.Net Core, Rails, Spring, Blazor, Django, Express.js, Node.js, Flask, Symfony & Laravel starter kits, admin themes, web design, figma, web development, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dak mode, bootstrap button, bootstrap datepicker, bootstrap timepicker, fullcalendar, datatables, flaticon" />
@@ -101,6 +101,11 @@ License: For each use you must have a valid license purchased only from above li
 									<!--begin::Link-->
 									<a href="#/recuperarContrasena" class="link-primary">Has olvidado tu contraseña ?</a>
 									<!--end::Link-->
+									<!--end::Submit button-->
+								<!--begin::Sign up-->
+								<div class="text-gray-500 text-center fw-semibold fs-6">No eres miembro todavía? 
+								<a href="#/suscribirse" class="link-primary">Suscribirse</a></div>
+								<!--end::Sign up-->
 								</div>
 								<!--end::Wrapper-->
 								<!--begin::Submit button-->
@@ -110,17 +115,18 @@ License: For each use you must have a valid license purchased only from above li
 										<span class="indicator-label">Iniciar sesión</span>
 										<!--end::Indicator label-->
 										<!--begin::Indicator progress-->
-										<span class="indicator-progress">Please wait... 
+										<span class="indicator-progress">Espera un momento... 
 										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 										<!--end::Indicator progress-->
 									</button>
 									
 								</div>
-								<!--end::Submit button-->
-								<!--begin::Sign up-->
-								<div class="text-gray-500 text-center fw-semibold fs-6">No eres miembro todavía? 
-								<a href="#/suscribirse" class="link-primary">Suscribirse</a></div>
-								<!--end::Sign up-->
+			
+								<div class="d-grid mb-10">
+                                <a href="guest_checkout.php" class="btn btn-secondary">
+                                    Comprar en modo invitado
+                                </a>
+                            </div>
 							</form>
 							<!--end::Form-->
 						</div>
