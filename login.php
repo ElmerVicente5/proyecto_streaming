@@ -70,7 +70,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Wrapper-->
 						<div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20" id='panelForm'>
 							<!--begin::Form-->
-							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="Backend/f_login.php" method="POST">
+							<form class="form w-100" novalidate="novalidate" id="formLogin"  method="POST">
 								<!--begin::Heading-->
 								<div class="text-center mb-11">
 									<!--begin::Title-->
@@ -105,7 +105,7 @@ License: For each use you must have a valid license purchased only from above li
 								<!--end::Wrapper-->
 								<!--begin::Submit button-->
 								<div class="d-grid mb-10">
-									<button type="submit" id="kt_sign_in_submit" class="btn btn-primary">
+									<button type="submit" id="btnIniciarSEsion" class="btn btn-primary">
 										<!--begin::Indicator label-->
 										<span class="indicator-label">Iniciar sesión</span>
 										<!--end::Indicator label-->
@@ -114,10 +114,7 @@ License: For each use you must have a valid license purchased only from above li
 										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 										<!--end::Indicator progress-->
 									</button>
-									<label class="form-check form-switch form-check-custom form-check-solid">
-                
-										<span class="form-check-label text-muted fs-7"><?php echo $mensaje; ?></span>
-									</label>
+									
 								</div>
 								<!--end::Submit button-->
 								<!--begin::Sign up-->
@@ -158,3 +155,67 @@ License: For each use you must have a valid license purchased only from above li
 	</body>
 	<!--end::Body-->
 </html>
+
+
+<script type="text/javascript">
+			$(document).ready(function(){
+				
+				//============= INICIAR SESION ============ 
+				$("#btnIniciarSEsion").on("click", function(e){
+					e.preventDefault();
+					bloquearBoton("btnIniciarSEsion");
+					$.post("Backend/f_login.php", $("#formLogin").serialize(), function(data){
+						if(data.resultado){
+							Swal.fire({icon:"success", title:"Exito", text:data.mensaje, confirmButtonText:"Aceptar" }) 
+							setTimeout("window.location.href = 'panel.php'", 700);
+
+						}else{
+							Swal.fire({icon:"warning", title:"Lo sentimos",  text:data.mensaje, confirmButtonText:"Aceptar"})
+
+						}
+						desbloquearBoton("btnIniciarSEsion");
+					},"json")
+					.fail(function(){
+
+						desbloquearBoton("btnIniciarSEsion");
+						Swal.fire({icon:"error", title:"Lo sentimos", text: "No existe conexion con el servidor", confirmButtonText:"Aceptar"})
+					})
+				})
+				//============= INICIAR SESION ============ 
+				$("#btnBucarProducto").on("click", function(e){
+					e.preventDefault();
+					bloquearBoton("btnBucarProducto");
+					$.post("funciones/ws_productos.php", "accion=buscarProducto&codigo="+$("#codigoProducto").val(), function(data){
+						if(data.resultado){
+							Swal.fire({icon:"success", title:"Exito", text:data.mensaje, confirmButtonText:"Aceptar" }).then((result)=>{
+								setTimeout("window.location.href = 'panel.php'", 700);
+							})
+
+						}else{
+							Swal.fire({icon:"warning", title:"Lo sentimos",  text:data.mensaje, confirmButtonText:"Aceptar"})
+
+						}
+						desbloquearBoton("btnBucarProducto");
+					},"json")
+					.fail(function(){
+
+						desbloquearBoton("btnBucarProducto");
+						Swal.fire({icon:"error", title:"Lo sentimos", text: "No existe conexion con el servidor", confirmButtonText:"Aceptar"})
+					})
+				})
+
+
+				function bloquearBoton(boton){
+					$("#"+boton).attr('data-kt-indicator', 'on');
+					$("#"+boton).attr('disabled', true);
+					$("#"+boton).css("disabled", true)
+				}
+
+			function desbloquearBoton(boton){
+				$("#"+boton).removeAttr('data-kt-indicator');// Remove loading indication			
+				$("#"+boton).removeAttr('disabled');// Remove loading indication			
+			}
+
+
+			})
+		</script>

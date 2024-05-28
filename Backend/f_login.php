@@ -3,6 +3,7 @@ require_once("conexion.php");
 
 // Variable para almacenar el mensaje
 $mensaje = "";
+$resultado  = array();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST['correo'] ?? '';
@@ -19,7 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Validar que las contraseñas coincidan
         if ($nueva_contrasena !== $confirmar_contrasena) {
             $mensaje = "Las contraseñas no coinciden.";
-            echo $mensaje;
+            $resultado['resultado']=false;
+            $resultado['mensaje']=$mensaje;
         } else {
             // Hash de la nueva contraseña
             $hashed_password = password_hash($nueva_contrasena, PASSWORD_DEFAULT);
@@ -31,8 +33,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $stmt->execute([$hashed_password, $correo]);
 
                 $mensaje = "Contraseña actualizada correctamente.";
+              
+                $resultado['resultado']=true;
+                $resultado['mensaje']=$mensaje;
             } catch (PDOException $e) {
                 $mensaje = "Error en la consulta: " . $e->getMessage();
+                $resultado['resultado']=false;
+                $resultado['mensaje']=$mensaje;
             }
         }
 
@@ -44,6 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Validar que las contraseñas coincidan
         if ($contrasena !== $confirmar_contrasena) {
             $mensaje = "Las contraseñas no coinciden.";
+            $resultado['resultado']=false;
+            $resultado['mensaje']=$mensaje;
         } else {
             // Hash de la nueva contraseña
             $hashed_password = password_hash($contrasena, PASSWORD_DEFAULT);
@@ -57,6 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 if ($count > 0) {
                     $mensaje = "El correo ya está registrado.";
+                    $resultado['resultado']=false;
+                    $resultado['mensaje']=$mensaje;
                 } else {
                     // Insertar el nuevo usuario en la base de datos
                     $sql = "INSERT INTO AutenticadorUsuario (correo, contrasena,tipo_usuario,id_avatar) VALUES (?, ?,'admin',1)";
@@ -64,9 +75,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $stmt->execute([$correo, $hashed_password]);
 
                     $mensaje = "Cuenta creada correctamente.";
+                    $resultado['resultado']=true;
+                    $resultado['mensaje']=$mensaje;
                 }
             } catch (PDOException $e) {
                 $mensaje = "Error en la consulta: " . $e->getMessage();
+                $resultado['resultado']=false;
+                $resultado['mensaje']=$mensaje;
             }
         }
 
@@ -84,18 +99,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Verificar si el correo existe en la base de datos
             if ($row && password_verify($contrasena, $row['contrasena'])) {
                 $mensaje = "Inicio de sesión exitoso.";
-                header("Location: ../panel.php");
-                exit(); // Asegúrate de salir después de la redirección
+               $resultado['resultado']=true;
+               $resultado['mensaje']=$mensaje;
+             
             } else {
                 $mensaje = "Correo o contraseña incorrectos.";
+                $resultado['resultado']=false;
+                $resultado['mensaje']=$mensaje; 
             }
         } catch (PDOException $e) {
             $mensaje = "Error en la consulta: " . $e->getMessage();
+            $resultado['resultado']=false;
+            $resultado['mensaje']=$mensaje;
         }
     }
 }
 
-echo $mensaje; // Mostrar el mensaje de error o éxito
+echo json_encode($resultado); // Mostrar el mensaje de error o éxito
 ?>
 
 
