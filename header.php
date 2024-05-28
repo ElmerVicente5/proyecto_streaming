@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
 
 </head>
@@ -436,16 +437,7 @@
                                             </a>
                                             <!--end:Menu link-->
                                         </div>
-                                        <div class="menu-item">
-                                            <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnMenuCrearCuenta" href="#">
-                                                <span class="menu-bullet">
-                                                    <span class="bullet bullet-dot"></span>
-                                                </span>
-                                                <span class="menu-title">Crear Cuenta</span>
-                                            </a>
-                                            <!--end:Menu link-->
-                                        </div>
+                                        
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
                                             <a class="menu-link" id="btnMenuConfiguraCuenta" href="#/editCuenta">

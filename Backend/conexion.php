@@ -1,62 +1,92 @@
 <?php
-// Definir la clase
 class Conexion extends PDO {
-    // Propiedades para almacenar datos de conexión
     private $server = 'localhost';
-    private $database = 'productos';
+    private $database = 'streamm';
     private $username = 'sa';
     private $password = 'elmer502';
 
-    // Constructor de la clase
-    public function __construct(){
+    public function __construct() {
         try {
-            // Conexión mediante PDO
             parent::__construct("sqlsrv:Server={$this->server};Database={$this->database}", $this->username, $this->password);
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Conexión exitosa";
+            //echo "Conexión exitosa";
         } catch (PDOException $e) {
-            // Si hay errores, mostrar mensaje
             echo "Error en la conexión: " . $e->getMessage();
         }
     }
-}
-public function consultar($query)
-{
-    try {
-        $respuesta = array();
-        $result = $this->connection->query($query);
- 
-        $error = $this->connection->errorInfo();
-        if ($error[0] === "00000") {
-            $result->execute();
-            if ($result->rowCount() > 0) {
-                $respuesta['resultado'] = true;
-                $respuesta['data'] = $result->fetchAll(PDO::FETCH_ASSOC);
-                $respuesta['rowCount'] = $result->rowCount();
-                $respuesta['mensaje']="Registros consultados exitosamente";
-                
-            }else{
-                $respuesta['data'] = array();
-                $respuesta['mensaje']="NO hay datos para mostrar";
-                $respuesta['resultado']= false;
-            }
 
-        } else {
-            throw new Exception($error[2]);
+   
+
+    public function consultar($query) {
+        try {
+            $respuesta = array();
+            $result = $this->query($query);
+            
+
+            if ($result) {
+                if ($result->rowCount() > 0) {
+                    $respuesta['resultado'] = true;
+                    $respuesta['data'] = $result->fetchAll(PDO::FETCH_ASSOC);
+                    $respuesta['rowCount'] = $result->rowCount();
+                    $respuesta['mensaje'] = "Registros consultados exitosamente";
+                } else {
+                    $respuesta['data'] = array();
+                    $respuesta['mensaje'] = "No hay datos para mostrar";
+                    $respuesta['resultado'] = false;
+                }
+            } else {
+                $error = $this->errorInfo();
+                throw new Exception($error[2]);
+            }
+        } catch (PDOException $e) {
+            $respuesta['mensaje'] = $e->getMessage();
+            $respuesta['resultado'] = false;
         }
-        
-     } catch (PDOException $e) {
-        $respuesta['mensaje']=$e->getMessage();
-        $respuesta['resultado']= false;
+
+        return $respuesta;
     }
 
-    return $respuesta;
+    public function iniciarTransaccion() {
+        $this->beginTransaction();
+    }
+
+    public function respuestaTrans($estado) {
+        if ($estado == "COMMIT") {
+            $this->commit();
+        } else {
+            $this->rollback();
+        }
+    }
 }
 
-// Crear una instancia de la clase
 
-$con1 = new Conexion();
 
+// Crear una instancia de la clase Conexion
+/*
+$conexion = new Conexion();
+
+try {
+        // Definir y ejecutar la consulta
+        $sql = "SELECT id_producto, nombre, precio FROM Productos";
+        $stmt = $conexion->query($sql);
+
+        // Verificar si la consulta fue exitosa
+        if ($stmt === false) {
+            die(print_r($conexion->errorInfo(), true));
+        }
+
+        // Obtener los resultados
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo "ID: " . $row['id_producto'] . " - Nombre: " . $row['nombre'] . " - Precio: " . $row['precio'] . "<br>";
+        }
+    } catch (PDOException $e) {
+    echo "Error en la consulta: " . $e->getMessage();
+    }
+// Crear una instancia de la clase para probar la conexión
+// Esto puede ser removido en producción
+// $con1 = new Conexion();
+*/
 ?>
+
 
 

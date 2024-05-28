@@ -70,7 +70,7 @@ License: For each use you must have a valid license purchased only from above li
 						<!--begin::Wrapper-->
 						<div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
 							<!--begin::Form-->
-							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="index.html" action="#">
+							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="Backend/f_login.php" method="POST">
 								<!--begin::Heading-->
 								<div class="text-center mb-11">
 									<!--begin::Title-->
@@ -83,13 +83,13 @@ License: For each use you must have a valid license purchased only from above li
 								
 								<div class="fv-row mb-8">
 									<!--begin::Email-->
-									<input type="text" placeholder="Correo electrónico o número de teléfono" name="correo" autocomplete="off" class="form-control bg-transparent" />
+									<input type="text" placeholder="Correo electrónico o número de teléfono" name="correo" autocomplete="off" class="form-control bg-transparent" required/>
 									<!--end::Email-->
 								</div>
 								<!--end::Input group=-->
 								<div class="fv-row mb-3">
 									<!--begin::Password-->
-									<input type="password" placeholder="Contraseña" name="contraseña" autocomplete="off" class="form-control bg-transparent" />
+									<input type="password" placeholder="Contraseña" name="contrasena" autocomplete="off" class="form-control bg-transparent" required />
 									<!--end::Password-->
 								</div>
 								<!--end::Input group=-->
@@ -146,7 +146,7 @@ License: For each use you must have a valid license purchased only from above li
 		<script src="assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Custom Javascript(used for this page only)-->
-		<script src="assets/js/custom/authentication/sign-in/general.js"></script>
+		
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
