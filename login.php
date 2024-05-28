@@ -68,7 +68,7 @@ License: For each use you must have a valid license purchased only from above li
 					<!--begin::Card-->
 					<div class="bg-body d-flex flex-column align-items-stretch flex-center rounded-4 w-md-600px p-20">
 						<!--begin::Wrapper-->
-						<div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
+						<div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20" id='panelForm'>
 							<!--begin::Form-->
 							<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="Backend/f_login.php" method="POST">
 								<!--begin::Heading-->
@@ -80,6 +80,8 @@ License: For each use you must have a valid license purchased only from above li
 									<div class="text-gray-500 fw-semibold fs-6"></div>
 									<!--end::Subtitle=-->
 								</div>
+								<!-- Campo oculto para indicar el tipo de operación -->
+   								 <input type="hidden" name="tipo" value="iniciar_sesion" />
 								
 								<div class="fv-row mb-8">
 									<!--begin::Email-->
@@ -97,7 +99,7 @@ License: For each use you must have a valid license purchased only from above li
 								<div class="d-flex flex-stack flex-wrap gap-3 fs-base fw-semibold mb-8">
 									<div></div>
 									<!--begin::Link-->
-									<a href="authentication/layouts/creative/reset-password.html" class="link-primary">Has olvidado tu contraseña ?</a>
+									<a href="#/recuperarContrasena" class="link-primary">Has olvidado tu contraseña ?</a>
 									<!--end::Link-->
 								</div>
 								<!--end::Wrapper-->
@@ -112,11 +114,15 @@ License: For each use you must have a valid license purchased only from above li
 										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 										<!--end::Indicator progress-->
 									</button>
+									<label class="form-check form-switch form-check-custom form-check-solid">
+                
+										<span class="form-check-label text-muted fs-7"><?php echo $mensaje; ?></span>
+									</label>
 								</div>
 								<!--end::Submit button-->
 								<!--begin::Sign up-->
 								<div class="text-gray-500 text-center fw-semibold fs-6">No eres miembro todavía? 
-								<a href="crearCuenta.php" class="link-primary">Suscribirse</a></div>
+								<a href="#/suscribirse" class="link-primary">Suscribirse</a></div>
 								<!--end::Sign up-->
 							</form>
 							<!--end::Form-->

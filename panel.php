@@ -13,7 +13,7 @@ include('header.php');
         this.get('#/login', function(context) {
             context.app.swap('');
             $("#kt_app_sidebar_navs_wrappers .menu-link").removeClass("active");
-            context.partial("login.php", function() {});
+            context.partial("index.php", function() {});
             $("#btnInicioSesion").addClass("active");
         });
        

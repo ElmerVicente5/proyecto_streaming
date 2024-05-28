@@ -419,7 +419,7 @@
                                         <!--begin:Menu item-->
                                         <div class="menu-item">
                                             <!--begin:Menu link-->
-                                            <a class="menu-link" id="btnInicioSesion" href="login.php">
+                                            <a class="menu-link" id="btnInicioSesion" href="index.php">
                                                 <span class="menu-bullet">
                                                     <span class="bullet bullet-dot"></span>
                                                 </span>
