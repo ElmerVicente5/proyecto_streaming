@@ -86,12 +86,7 @@
 													<label class="form-label">Categorías</label>
 													<!--end::Label-->
 													<!--begin::Select2-->
-													<form  method="POST" id="Mostrarcategorias">
-													<select  id="categoria" class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-placeholder="Seleccione una opción" data-allow-clear="true" multiple="" data-select2-id="select2-data-11-x5az" tabindex="-1" aria-hidden="true" data-kt-initialized="1" name="MostrarCategorias">
-													
-													</form>
-													</select>
-													<span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-12-2yt1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-4a7k-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-4a7k-container" placeholder="Seleccione una opción" style="width: 100%;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
 													<!--end::Select2-->
 													<!--begin::Description-->
 													<div class="text-muted fs-7 mb-7">Agregar producto a una categoría.</div>
@@ -322,7 +317,7 @@
 												<!--begin::Button-->
 												<button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
 													<span class="indicator-label">Guardar cambios</span>
-													<span class="indicator-progress">Please wait... 
+													<span class="indicator-progress">Espere por favor... 
 													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 												</button>
 												<!--end::Button-->

@@ -102,12 +102,12 @@
 															<div class="row">
 																<!--begin::Col-->
 																<div class="col-lg-6 fv-row fv-plugins-icon-container">
-																	<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="First name" value="Max">
+																	<input type="text" name="fname" class="form-control form-control-lg form-control-solid mb-3 mb-lg-0" placeholder="Nombre" value="Max">
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Col-->
 																<!--begin::Col-->
 																<div class="col-lg-6 fv-row fv-plugins-icon-container">
-																	<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Last name" value="Smith">
+																	<input type="text" name="lname" class="form-control form-control-lg form-control-solid" placeholder="Apellido" value="Smith">
 																<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 																<!--end::Col-->
 															</div>
@@ -127,7 +127,7 @@
 														<!--end::Label-->
 														<!--begin::Col-->
 														<div class="col-lg-8 fv-row fv-plugins-icon-container">
-															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Phone number" value="044 3276 454 935">
+															<input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="Número de teléfono" value="044 3276 454 935">
 														<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
 														<!--end::Col-->
 													</div>
@@ -203,9 +203,11 @@
 																<div class="col-lg-6 mb-4 mb-lg-0">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
 																		<label for="emailaddress" class="form-label fs-6 fw-bold mb-3">Ingrese una nueva dirección de correo electrónico</label>
-																		<input type="email" class="form-control form-control-lg form-control-solid" id="emailaddress" placeholder="Email Address" name="emailaddress" value="support@keenthemes.com">
-																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div></div>
+																		<input type="email" class="form-control form-control-lg form-control-solid" id="emailaddress" placeholder="Dirección de correo electrónico" name="emailaddress" value="support@keenthemes.com">
+																	<div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
 																</div>
+																</div>
+
 																<div class="col-lg-6">
 																	<div class="fv-row mb-0 fv-plugins-icon-container">
 																		<label for="confirmemailpassword" class="form-label fs-6 fw-bold mb-3">Confirmar contraseña</label>
