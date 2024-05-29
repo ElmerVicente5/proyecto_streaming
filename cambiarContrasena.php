@@ -1,4 +1,4 @@
-<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="Backend/f_login.php" method="POST">
+<form class="form w-100" novalidate="novalidate" id="kt_sign_in_form"  method="POST">
     <!--begin::Heading-->
     <div class="text-center mb-11">
         <!--begin::Title-->
@@ -44,7 +44,7 @@
         </button>
              <label class="form-check form-switch form-check-custom form-check-solid">
                 
-                <span class="form-check-label text-muted fs-7"><?php echo $mensaje; ?></span>
+                <span class="form-check-label text-muted fs-7"></span>
             </label>
     </div>
     <!--end::Submit button-->

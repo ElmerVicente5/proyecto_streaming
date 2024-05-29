@@ -45,6 +45,26 @@ class Conexion extends PDO {
 
         return $respuesta;
     }
+    public function sqlInsert($query, $arrayDatos) {
+        try {
+            $respuesta = array();
+            $insert = $this->prepare($query);
+            $resInsert = $insert->execute($arrayDatos);
+            
+            if ($resInsert) {
+                $respuesta['mensaje'] = "Operación realizada correctamente";
+                $respuesta['ultimoId'] = $this->lastInsertId();
+                $respuesta['resultado'] = true;
+            } else {
+                $respuesta['mensaje'] = "Operación no realizada";
+                $respuesta['resultado'] = false;
+            }
+        } catch (PDOException $e) {
+            $respuesta['mensaje'] = $e->getMessage();
+            $respuesta['resultado'] = false;
+        }
+        return $respuesta;
+    }
 
     public function iniciarTransaccion() {
         $this->beginTransaction();
@@ -57,6 +77,10 @@ class Conexion extends PDO {
             $this->rollback();
         }
     }
+    public function rollback() {
+        $this->pdo->rollBack();
+    }
+
 }
 
 

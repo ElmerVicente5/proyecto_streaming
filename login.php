@@ -123,7 +123,7 @@ License: For each use you must have a valid license purchased only from above li
 								</div>
 			
 								<div class="d-grid mb-10">
-                                <a href="guest_checkout.php" class="btn btn-secondary">
+                                <a href="panel.php" class="btn btn-secondary">
                                     Comprar en modo invitado
                                 </a>
                             </div>
@@ -187,29 +187,6 @@ License: For each use you must have a valid license purchased only from above li
 						Swal.fire({icon:"error", title:"Lo sentimos", text: "No existe conexion con el servidor", confirmButtonText:"Aceptar"})
 					})
 				})
-				//============= INICIAR SESION ============ 
-				$("#btnBucarProducto").on("click", function(e){
-					e.preventDefault();
-					bloquearBoton("btnBucarProducto");
-					$.post("funciones/ws_productos.php", "accion=buscarProducto&codigo="+$("#codigoProducto").val(), function(data){
-						if(data.resultado){
-							Swal.fire({icon:"success", title:"Exito", text:data.mensaje, confirmButtonText:"Aceptar" }).then((result)=>{
-								setTimeout("window.location.href = 'panel.php'", 700);
-							})
-
-						}else{
-							Swal.fire({icon:"warning", title:"Lo sentimos",  text:data.mensaje, confirmButtonText:"Aceptar"})
-
-						}
-						desbloquearBoton("btnBucarProducto");
-					},"json")
-					.fail(function(){
-
-						desbloquearBoton("btnBucarProducto");
-						Swal.fire({icon:"error", title:"Lo sentimos", text: "No existe conexion con el servidor", confirmButtonText:"Aceptar"})
-					})
-				})
-
 
 				function bloquearBoton(boton){
 					$("#"+boton).attr('data-kt-indicator', 'on');
@@ -224,4 +201,4 @@ License: For each use you must have a valid license purchased only from above li
 
 
 			})
-		</script>
+</script>

@@ -25,8 +25,7 @@ include('login.php');
             context.partial("cambiarContrasena.php", function() {});
             
         });
-
-
+       
 
         
 
