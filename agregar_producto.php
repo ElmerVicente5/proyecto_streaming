@@ -88,16 +88,16 @@
 													<!--begin::Select2-->
 													<select class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-placeholder="Seleccione una opción" data-allow-clear="true" multiple="" data-select2-id="select2-data-11-x5az" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
 														<option></option>
-														<option value="Computers">Computers</option>
-														<option value="Watches">Watches</option>
-														<option value="Headphones">Headphones</option>
-														<option value="Footwear">Footwear</option>
-														<option value="Cameras">Cameras</option>
-														<option value="Shirts">Shirts</option>
-														<option value="Household">Household</option>
-														<option value="Handbags">Handbags</option>
-														<option value="Wines">Wines</option>
-														<option value="Sandals">Sandals</option>
+														<option value="Ordenadores">Ordenadores</option>
+														<option value="Relojes">Relojes</option>
+														<option value="Auriculares">Auriculares</option>
+														<option value="Calzado">Calzado</option>
+														<option value="Cámaras">Cámaras</option>
+														<option value="Camisas">Camisas</option>
+														<option value="Familiar">Familiar</option>
+														<option value="Bolsas/Bolsos">Bolsas/Bolsos</option>
+														<option value="Vinos">Vinos</option>
+														<option value="Sandalias">Sandalias</option>
 													</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-12-2yt1" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--multiple form-select mb-2" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1" aria-disabled="false"><ul class="select2-selection__rendered" id="select2-4a7k-container"></ul><span class="select2-search select2-search--inline"><textarea class="select2-search__field" type="search" tabindex="0" autocorrect="off" autocapitalize="none" spellcheck="false" role="searchbox" aria-autocomplete="list" autocomplete="off" aria-label="Search" aria-describedby="select2-4a7k-container" placeholder="Seleccione una opción" style="width: 100%;"></textarea></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 													<!--end::Select2-->
 													<!--begin::Description-->
@@ -325,7 +325,7 @@
 																<!--begin::Input group-->
 																<div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_percentage">
 																	<!--begin::Label-->
-																	<label class="form-label">Set Discount Percentage</label>
+																	<label class="form-label">Establecer porcentaje de descuento.</label>
 																	<!--end::Label-->
 																	<!--begin::Slider-->
 																	<div class="d-flex flex-column text-center mb-5">
@@ -337,20 +337,20 @@
 																	</div>
 																	<!--end::Slider-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set a percentage discount to be applied on this product.</div>
+																	<div class="text-muted fs-7">Establecer un porcentaje de descuento que se aplicará en este producto.</div>
 																	<!--end::Description-->
 																</div>
 																<!--end::Input group-->
 																<!--begin::Input group-->
 																<div class="d-none mb-10 fv-row" id="kt_ecommerce_add_product_discount_fixed">
 																	<!--begin::Label-->
-																	<label class="form-label">Fixed Discounted Price</label>
+																	<label class="form-label">Precio fijo con descuento</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
 																	<input type="text" name="dicsounted_price" class="form-control mb-2" placeholder="Discounted price">
 																	<!--end::Input-->
 																	<!--begin::Description-->
-																	<div class="text-muted fs-7">Set the discounted product price. The product will be reduced at the determined fixed price</div>
+																	<div class="text-muted fs-7">Establecer el precio del producto con descuento. El producto se reducirá al precio fijo determinado</div>
 																	<!--end::Description-->
 																</div>
 																
@@ -463,10 +463,10 @@
 																					<div class="w-100 w-md-200px">
 																						<select class="form-select select2-hidden-accessible" name="kt_ecommerce_add_product_options[0][product_option]" data-placeholder="Seleccionar una variación" data-kt-ecommerce-catalog-add-product="product_option" data-select2-id="select2-data-138-jz2c" tabindex="-1" aria-hidden="true">
 																							<option data-select2-id="select2-data-140-mqxi"></option>
-																							<option value="color">Color</option>
-																							<option value="size">Size</option>
-																							<option value="material">Material</option>
-																							<option value="style">Style</option>
+																							<option value="Color">Color</option>
+																							<option value="Tamaño">Tamaño</option>
+																							<option value="Material">Material</option>
+																							<option value="Estilo">Estilo</option>
 																						</select><span class="select2 select2-container select2-container--bootstrap5" dir="ltr" data-select2-id="select2-data-139-gzre" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single form-select" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-kt_ecommerce_add_product_options0product_option-yy-container" aria-controls="select2-kt_ecommerce_add_product_options0product_option-yy-container"><span class="select2-selection__rendered" id="select2-kt_ecommerce_add_product_options0product_option-yy-container" role="textbox" aria-readonly="true" title="Seleccionar una variación"><span class="select2-selection__placeholder">Seleccionar una variación</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
 																					</div>
 																					<!--end::Select2-->
@@ -526,20 +526,20 @@
 																	<!--begin::Input group-->
 																	<div class="mb-10 fv-row">
 																		<!--begin::Label-->
-																		<label class="form-label">Weight</label>
+																		<label class="form-label">Peso</label>
 																		<!--end::Label-->
 																		<!--begin::Editor-->
-																		<input type="text" name="weight" class="form-control mb-2" placeholder="Product weight" value="">
+																		<input type="text" name="weight" class="form-control mb-2" placeholder="Peso del producto" value="">
 																		<!--end::Editor-->
 																		<!--begin::Description-->
-																		<div class="text-muted fs-7">Set a product weight in kilograms (kg).</div>
+																		<div class="text-muted fs-7">Establecer un peso del producto en kilogramos (kg).</div>
 																		<!--end::Description-->
 																	</div>
 																	<!--end::Input group-->
 																	<!--begin::Input group-->
 																	<div class="fv-row">
 																		<!--begin::Label-->
-																		<label class="form-label">Dimension</label>
+																		<label class="form-label">Dimensión</label>
 																		<!--end::Label-->
 																		<!--begin::Input-->
 																		<div class="d-flex flex-wrap flex-sm-nowrap gap-3">
@@ -549,7 +549,7 @@
 																		</div>
 																		<!--end::Input-->
 																		<!--begin::Description-->
-																		<div class="text-muted fs-7">Enter the product dimensions in centimeters (cm).</div>
+																		<div class="text-muted fs-7">Ingrese las dimensiones del producto en centímetros (cm).</div>
 																		<!--end::Description-->
 																	</div>
 																	<!--end::Input group-->
@@ -626,7 +626,7 @@
 												<!--begin::Button-->
 												<button type="submit" id="kt_ecommerce_add_product_submit" class="btn btn-primary">
 													<span class="indicator-label">Guardar cambios</span>
-													<span class="indicator-progress">Please wait... 
+													<span class="indicator-progress">Espere por favor... 
 													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 												</button>
 												<!--end::Button-->

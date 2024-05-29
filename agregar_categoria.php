@@ -116,14 +116,7 @@
 											</div>
 											<!--end::General options-->
 											<!--begin::Meta options-->
-											<div class="card card-flush py-4">
-												<!--begin::Card header-->
-												
-												<!--end::Card header-->
-												<!--begin::Card body-->
-												
-												<!--end::Card header-->
-											</div>
+											
 											
 											<div class="d-flex justify-content-end">
 												<!--begin::Button-->
@@ -132,7 +125,7 @@
 												<!--begin::Button-->
 												<button type="submit" id="kt_ecommerce_add_category_submit" class="btn btn-primary">
 													<span class="indicator-label">Guardar cambios</span>
-													<span class="indicator-progress">Please wait... 
+													<span class="indicator-progress">Espere por favor... 
 													<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 												</button>
 												<!--end::Button-->
