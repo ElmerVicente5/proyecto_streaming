@@ -3,35 +3,48 @@ require_once 'conexion.php';
 
 $resultado = array();
 
-$accion = $_POST['tipo'];
+//$accion = $_POST['tipo'];
+$accion=$GET['tipo'];
+
 
 switch ($accion) {
     case 'AgregarCategoria': agregarCategoria(); break;
-    case 'MostrarCategorias': mostrarCategorias(); break; // Cambiar 'MostrarProductos' por 'MostrarCategorias
+    case 'mostrarCategorias': mostrarCategorias(); break; // Cambiar 'MostrarProductos' por 'MostrarCategorias
     case 'ActualizarCategoria': nuevoProducto(); break;
 }
 
-function mostrarCategorias() {
-    try {    
+
+function mostrarCategorias()
+{
+    $respuesta = array();
+    try {
+        // Asumir que ya tienes una clase Conexion que maneja la conexión a la base de datos
         $conexion = new Conexion();
-        $sql = "SELECT id_categoria,nombrecategoria FROM Categoria";
-        $consulta = $conexion->consultar($sql);
-        if ($consulta["rowCount"] > 0) {
-            $respuesta["resultado"] = true;
-            $respuesta["mensaje"] = "Mostrando productos";
-            $respuesta["data"] = $consulta["data"];
+        $sql = "SELECT id_categoria, nombrecategoria FROM Categoria;";
+        $stmt = $conexion->prepare($sql);
+        $stmt->execute(); // Ejecutar la consulta
+
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC); 
+      
+        if (!empty($result)) {
+            // Asignar los resultados a la respuesta si hay datos
+            $respuesta["data"] = $result;
         } else {
-            $respuesta["resultado"] = false;
-            $respuesta["mensaje"] = "No existen productos por mostrar";
+            // Si no hay datos, asignar un mensaje de error
             $respuesta["data"] = array();
+            $respuesta["error"] = "No hay datos disponibles.";
         }
+        
     } catch (Exception $e) {
-        $respuesta['resultado'] = false;
-        $respuesta['mensaje'] = $e->getMessage();
+        $respuesta['data'] = array();
+        $respuesta['error'] = $e->getMessage();
     }
 
+    // Establecer el encabezado de respuesta como JSON
+    header('Content-Type: application/json');
     echo json_encode($respuesta);
 }
+
 
 function agregarCategoria() {
     try {    

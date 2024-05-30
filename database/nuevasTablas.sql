@@ -68,6 +68,45 @@ INSERT INTO cuentas(id_producto,usuario,contrasenia)VALUES
 (2,'disney_user2', 'disney_pass2'),
 (3,'hbo_user1', 'hbo_pass1');
 
+
+INSERT INTO ventas (usuario, estado, metodoPago, producto, fechaCompra) VALUES
+(1, 'Completado', 1, 1, '2023-05-01'),
+(1, 'Pendiente', 2, 2, '2023-05-02'),
+(1, 'Completado', 1, 3, '2023-05-03'),
+(1, 'Cancelado', 2, 4, '2023-05-04'),
+(1, 'Completado', 2, 5, '2023-05-05'),
+(1, 'Pendiente', 1, 5, '2023-05-06'),
+(1, 'Completado', 2, 2, '2023-05-07'),
+(1, 'Cancelado', 2, 2, '2023-05-08');
+
+
+INSERT INTO Categoria ( nombrecategoria, descripcion) VALUES
+('VIDEOS', 'Entretenimiento'),
+( 'MUSICA', 'Disfruta tu vida'),
+('JUEGOS', 'Entretenimiento'),
+( 'COMBOS', 'Los mejores precios'),
+( 'STREAMING', 'los mejores productos');
+
+insert into tipo_usuario(tipo_usuario)values('admin'),('cliente');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --consultapara obtener las ventas de los productos
 SELECT U.usuario,V.estado,TP.tipo_pago,PR.nombreProducto,V.fechaCompra
         FROM ventas AS V
