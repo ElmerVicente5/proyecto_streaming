@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             try {
                 // Actualizar la contraseña en la base de datos
-                $sql = "UPDATE AutenticadorUsuario SET contrasena = ? WHERE correo = ?";
+                $sql = "UPDATE usuarios SET contrasenia = ? WHERE usuario = ?";
                 $stmt = $conexion->prepare($sql);
                 $stmt->execute([$hashed_password, $correo]);
 
@@ -59,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             try {
                 // Verificar si el correo ya existe
-                $sql = "SELECT COUNT(*) FROM AutenticadorUsuario WHERE correo = ?";
+                $sql = "SELECT COUNT(*) FROM usuarios WHERE usuario = ?";
                 $stmt = $conexion->prepare($sql);
                 $stmt->execute([$correo]);
                 $count = $stmt->fetchColumn();
@@ -70,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $resultado['mensaje']=$mensaje;
                 } else {
                     // Insertar el nuevo usuario en la base de datos
-                    $sql = "INSERT INTO AutenticadorUsuario (correo, contrasena,tipo_usuario,id_avatar) VALUES (?, ?,'admin',1)";
+                    $sql = "INSERT INTO usuarios (usuario,contrasenia,tipo_usuario) VALUES (?, ?,1)";
                     $stmt = $conexion->prepare($sql);
                     $stmt->execute([$correo, $hashed_password]);
 
@@ -91,13 +91,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         try {
             // Preparar la consulta para verificar las credenciales
-            $sql = "SELECT contrasena FROM AutenticadorUsuario WHERE correo = ?";
+            $sql = "SELECT contrasenia FROM usuarios WHERE usuario = ?";
             $stmt = $conexion->prepare($sql);
             $stmt->execute([$correo]);
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Verificar si el correo existe en la base de datos
-            if ($row && password_verify($contrasena, $row['contrasena'])) {
+            if ($row && password_verify($contrasena, $row['contrasenia'])) {
                 $mensaje = "Inicio de sesión exitoso.";
                $resultado['resultado']=true;
                $resultado['mensaje']=$mensaje;
