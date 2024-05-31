@@ -76,7 +76,7 @@
 												<div class="card-header">
 													<!--begin::Card title-->
 													<div class="card-title">
-														<h2>Product Details</h2>
+														<h2>Categoria Producto</h2>
 													</div>
 													<!--end::Card title-->
 												</div>
@@ -85,7 +85,7 @@
 												<div class="card-body pt-0">
 													<!--begin::Input group-->
 													<!--begin::Label-->
-													<label class="form-label">Categories</label>
+													<label class="form-label">Categorias</label>
 													<!--end::Label-->
 													<!--begin::Select2-->
 													<select id="category-select"class="form-select mb-2 select2-hidden-accessible" data-control="select2" data-placeholder="Select an option" data-allow-clear="true" multiple="" data-select2-id="select2-data-11-op1i" tabindex="-1" aria-hidden="true" data-kt-initialized="1">
@@ -150,7 +150,7 @@
 																<!--begin::Input group-->
 																<div class="mb-10 fv-row fv-plugins-icon-container">
 																	<!--begin::Label-->
-																	<label class="required form-label">Product Name</label>
+																	<label class="required form-label">Nombre del producto</label>
 																	<!--end::Label-->
 																	<!--begin::Input-->
 																	<input type="text" name="product_name" class="form-control mb-2" placeholder="Product name" value="">

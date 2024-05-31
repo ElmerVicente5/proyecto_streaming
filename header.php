@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Metronic - The World's #1 Selling Bootstrap Admin Template by KeenThemes" />
+    <meta property="og:title" content="Streaming" />
     <meta property="og:url" content="https://keenthemes.com/metronic" />
-    <meta property="og:site_name" content="Metronic by Keenthemes" />
+    <meta property="og:site_name" content="Streaming" />
     <link rel="canonical" href="http://index.html" />
     <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
     <!--begin::Fonts(mandatory for all pages)-->
@@ -61,7 +61,7 @@
                             </i>
                         </div>
                         <!--begin::Logo image-->
-                        <a href="index.html">
+                        <a href="index.php">
                             <img alt="Logo" src="assets/media/logos/demo36.svg" class="h-30px theme-light-show" />
                             <img alt="Logo" src="assets/media/logos/demo36.svg" class="h-30px theme-dark-show" />
                         </a>
@@ -107,7 +107,7 @@
                                 <!--end::Breadcrumb-->
                             </div>
                             <!--begin::Title-->
-                            <h1 class="text-gray-900 fw-bolder m-0">Account</h1>
+                            <h1 class="text-gray-900 fw-bolder m-0">SRTREAMING-ACOUNT</h1>
                             <!--end::Title-->
                         </div>
                         <!--end::Page title-->
@@ -138,7 +138,7 @@
                                 <!--begin::User info-->
                                 <div class="d-flex align-items-center" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-overflow="true" data-kt-menu-placement="top-start">
                                     <div class="d-flex flex-center cursor-pointer symbol symbol-custom symbol-40px">
-                                        <img src="assets/media/avatars/300-1.jpg" alt="image" />
+                                        <img src="assets/media/avatars/blank.png" alt="image" />
                                     </div>
                                     <!--begin::Username-->
                                     <a href="#" class="text-white text-hover-primary fs-4 fw-bold ms-3">Elmer</a>
@@ -152,14 +152,14 @@
                                         <div class="menu-content d-flex align-items-center px-3">
                                             <!--begin::Avatar-->
                                             <div class="symbol symbol-50px me-5">
-                                                <img alt="Logo" src="assets/media/avatars/300-1.jpg" />
+                                                <img alt="Logo" src="assets/media/avatars/blank.png" />
                                             </div>
                                             <!--end::Avatar-->
                                             <!--begin::Username-->
                                             <div class="d-flex flex-column">
                                                 <div class="fw-bold d-flex align-items-center fs-5">Elmer
-                                                <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Pro</span></div>
-                                                <a href="#" class="fw-semibold text-muted text-hover-primary fs-7">eugenia@kt.com</a>
+                                                <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2"></span></div>
+                                                <a href="#" class="fw-semibold text-muted text-hover-primary fs-7"></a>
                                             </div>
                                             <!--end::Username-->
                                         </div>
@@ -170,62 +170,13 @@
                                     <!--end::Menu separator-->
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-5">
-                                        <a href="account/overview.html" class="menu-link px-5">Mi cuenta</a>
+                                        <a href="#/cuenta" class="menu-link px-5">Mi cuenta</a>
                                     </div>
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
                                                                      <!--end::Menu item-->
                                     <!--begin::Menu item-->
-                                    <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="right-end" data-kt-menu-offset="-15px, 0">
-                                        <a href="#" class="menu-link px-5">
-                                            <span class="menu-title">Mis suscripciones</span>
-                                            <span class="menu-arrow"></span>
-                                        </a>
-                                        <!--begin::Menu sub-->
-                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/referrals.html" class="menu-link px-5">Referrals</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/billing.html" class="menu-link px-5">Billing</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/statements.html" class="menu-link px-5">Payments</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/statements.html" class="menu-link d-flex flex-stack px-5">Statements 
-                                                <span class="ms-2 lh-0" data-bs-toggle="tooltip" title="View your statements">
-                                                    <i class="ki-duotone ki-information-5 fs-5">
-                                                        <span class="path1"></span>
-                                                        <span class="path2"></span>
-                                                        <span class="path3"></span>
-                                                    </i>
-                                                </span></a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu separator-->
-                                            <div class="separator my-2"></div>
-                                            <!--end::Menu separator-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <div class="menu-content px-3">
-                                                    <label class="form-check form-switch form-check-custom form-check-solid">
-                                                        <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications" />
-                                                        <span class="form-check-label text-muted fs-7">Notifications</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <!--end::Menu item-->
-                                        </div>
-                                        <!--end::Menu sub-->
-                                    </div>
+                                    
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
                                     
@@ -312,62 +263,10 @@
                                     </div>
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
-                                    <div class="menu-item px-5" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-placement="right-end" data-kt-menu-offset="-15px, 0">
-                                        <a href="#" class="menu-link px-5">
-                                            <span class="menu-title position-relative">Idioma
-                                            <span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English 
-                                            <img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="" /></span></span>
-                                        </a>
-                                        <!--begin::Menu sub-->
-                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/settings.html" class="menu-link d-flex px-5 active">
-                                                <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="assets/media/flags/united-states.svg" alt="" />
-                                                </span>English</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/settings.html" class="menu-link d-flex px-5">
-                                                <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="assets/media/flags/spain.svg" alt="" />
-                                                </span>Spanish</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/settings.html" class="menu-link d-flex px-5">
-                                                <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="assets/media/flags/germany.svg" alt="" />
-                                                </span>German</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/settings.html" class="menu-link d-flex px-5">
-                                                <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="assets/media/flags/japan.svg" alt="" />
-                                                </span>Japanese</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                            <!--begin::Menu item-->
-                                            <div class="menu-item px-3">
-                                                <a href="account/settings.html" class="menu-link d-flex px-5">
-                                                <span class="symbol symbol-20px me-4">
-                                                    <img class="rounded-1" src="assets/media/flags/france.svg" alt="" />
-                                                </span>French</a>
-                                            </div>
-                                            <!--end::Menu item-->
-                                        </div>
-                                        <!--end::Menu sub-->
-                                    </div>
+                                    
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
-                                    <div class="menu-item px-5 my-1">
-                                        <a href="account/settings.html" class="menu-link px-5">Configuracion de cuenta</a>
-                                    </div>
+                                   
                                     <!--end::Menu item-->
                                     <!--begin::Menu item-->
                                     <div class="menu-item px-5">

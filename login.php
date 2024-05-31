@@ -43,7 +43,7 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Root-->
 		<div class="d-flex flex-column flex-root" id="kt_app_root">
 			<!--begin::Page bg image-->
-			<style>body { background-image: url('assets/media/auth/bg4.jpg'); } [data-bs-theme="dark"] body { background-image: url('assets/media/auth/bg4-dark.jpg'); }</style>
+			<style>body { background-image: url('assets/media/auth/bg7-dark.jpg'); } [data-bs-theme="dark"] body { background-image: url('assets/media/auth/bg4-dark.jpg'); }</style>
 			<!--end::Page bg image-->
 			<!--begin::Authentication - Sign-in -->
 			<div class="d-flex flex-column flex-column-fluid flex-lg-row">
@@ -53,11 +53,11 @@ License: For each use you must have a valid license purchased only from above li
 					<div class="d-flex flex-center flex-lg-start flex-column">
 						<!--begin::Logo-->
 						<a href="index.html" class="mb-7">
-							<img alt="Logo" src="assets/media/logos/custom-3.svg" />
+							
 						</a>
 						<!--end::Logo-->
 						<!--begin::Title-->
-						<h2 class="text-white fw-normal m-0">Somos tu mejor opción</h2>
+						<h2 class="text-white fw-normal m-0">Tu mejor opcion en cuentas</h2>
 						<!--end::Title-->
 					</div>
 					<!--begin::Aside-->

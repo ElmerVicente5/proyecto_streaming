@@ -14,7 +14,7 @@
                             <!--begin: Pic-->
                             <div class="me-7 mb-4">
                                 <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
-                                    <img src="assets/media/avatars/300-2.jpg" alt="image">
+                                    <img src="assets/media/avatars/blank.png" alt="image">
                                     <div class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px"></div>
                                 </div>
                             </div>
@@ -27,7 +27,7 @@
                                     <div class="d-flex flex-column">
                                         <!--begin::Name-->
                                         <div class="d-flex align-items-center mb-2">
-                                            <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">Eugenia</a>
+                                            <a href="#" class="text-gray-900 text-hover-primary fs-2 fw-bold me-1">Elmer</a>
                                             
                                            
                                         </div>
@@ -52,7 +52,7 @@
                                                         <span class="path1"></span>
                                                         <span class="path2"></span>
                                                     </i>
-                                                    <div class="fs-2 fw-bold counted" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$" data-kt-initialized="1">Q4,500</div>
+                                                    <div class="fs-2 fw-bold counted" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$" data-kt-initialized="1">5 cuentas</div>
                                                 </div>
                                                 <!--end::Number-->
                                                 
@@ -81,11 +81,11 @@
                     <div class="card-header cursor-pointer">
                         <!--begin::Card title-->
                         <div class="card-title m-0">
-                            <h3 class="fw-bold m-0">Detalles del perfil</h3>
+                            <h3 class="fw-bold m-0">suscripciones Compradas</h3>
                         </div>
                         <!--end::Card title-->
                         <!--begin::Action-->
-                        <a href="account/settings.html" class="btn btn-sm btn-primary align-self-center">Editar perfil</a>
+                     
                         <!--end::Action-->
                     </div>
                     <!--begin::Card header-->
@@ -98,7 +98,7 @@
                             <!--end::Label-->
                              <!--begin::Col-->
                             <div class="col-lg-8">
-                                <span class="fw-bold fs-6 text-gray-800">Max Smith</span>
+                                <span class="fw-bold fs-6 text-gray-800">Elmer Vicente</span>
                             </div>
                             <!--end::Col-->
                            

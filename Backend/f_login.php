@@ -1,5 +1,10 @@
 <?php
+
+//session_start();
+//error_reporting(E_ALL);
+//ini_set("display_errors",0);
 require_once("conexion.php");
+
 
 // Variable para almacenar el mensaje
 $mensaje = "";
@@ -24,18 +29,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $resultado['mensaje']=$mensaje;
         } else {
             // Hash de la nueva contraseña
-            $hashed_password = password_hash($nueva_contrasena, PASSWORD_DEFAULT);
-
+            //$hashed_password = password_hash($nueva_contrasena, PASSWORD_DEFAULT);
+            $hashed_password = encriptar_pwd($_POST["correo"], $_POST["nueva_contrasena"]);
             try {
                 // Actualizar la contraseña en la base de datos
                 $sql = "UPDATE usuarios SET contrasenia = ? WHERE usuario = ?";
-                $stmt = $conexion->prepare($sql);
-                $stmt->execute([$hashed_password, $correo]);
+                $arrayData = array($hashed_password, $_POST["correo"]);
+                $actualizar = $conexion->sqlUpdate($sql, $arrayData);
+                if($actualizar["resultado"]){
+                    $resultado['resultado']=true;
+                    $resultado['mensaje']= "Contraseña actualizada correctamente.";
+                }else{
+                    
+                    $resultado['resultado']=false;
+                    $resultado['mensaje'] = "No es posible actualizar contrasenia.";
+                } 
+            
 
-                $mensaje = "Contraseña actualizada correctamente.";
-              
-                $resultado['resultado']=true;
-                $resultado['mensaje']=$mensaje;
+                
             } catch (PDOException $e) {
                 $mensaje = "Error en la consulta: " . $e->getMessage();
                 $resultado['resultado']=false;
@@ -54,29 +65,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $resultado['resultado']=false;
             $resultado['mensaje']=$mensaje;
         } else {
+            $conn = $conexion->connect();
             // Hash de la nueva contraseña
-            $hashed_password = password_hash($contrasena, PASSWORD_DEFAULT);
-
+          
+            $hashed_password = encriptar_pwd($conn,$_POST["correo"], $_POST["contrasena"]);
             try {
                 // Verificar si el correo ya existe
-                $sql = "SELECT COUNT(*) FROM usuarios WHERE usuario = ?";
-                $stmt = $conexion->prepare($sql);
-                $stmt->execute([$correo]);
-                $count = $stmt->fetchColumn();
+                $sql = "SELECT  1 as token FROM usuarios WHERE usuario = '$_POST[correo]'";
+                $consulta = $conexion->consultar($sql);
 
-                if ($count > 0) {
+                
+                if ($consulta["rowCount"] > 0) {
                     $mensaje = "El correo ya está registrado.";
                     $resultado['resultado']=false;
                     $resultado['mensaje']=$mensaje;
                 } else {
                     // Insertar el nuevo usuario en la base de datos
                     $sql = "INSERT INTO usuarios (usuario,contrasenia,tipo_usuario) VALUES (?, ?,1)";
-                    $stmt = $conexion->prepare($sql);
-                    $stmt->execute([$correo, $hashed_password]);
+                    $arrayData = array($correo,$hashed_password);
+                    $insertar = $conexion->sqlInsert($sql, $arrayData);
 
-                    $mensaje = "Cuenta creada correctamente.";
-                    $resultado['resultado']=true;
-                    $resultado['mensaje']=$mensaje;
+                    if($insertar["resultado"] == true){
+                
+                        $resultado['resultado']=true;
+                        $resultado['mensaje']= "Cuenta creada correctamente.";
+                     
+
+                    }else{
+                        $resultado['resultado']=false;
+                        $resultado['mensaje'] =  "Error al crear la cuenta.";
+                    }
+
                 }
             } catch (PDOException $e) {
                 $mensaje = "Error en la consulta: " . $e->getMessage();
@@ -87,17 +106,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     } else {
         // Iniciar sesión
-        $contrasena = $_POST['contrasena'] ?? '';
+        $contrasena = $_POST['contrasena'];
 
         try {
             // Preparar la consulta para verificar las credenciales
-            $sql = "SELECT contrasenia FROM usuarios WHERE usuario = ?";
-            $stmt = $conexion->prepare($sql);
-            $stmt->execute([$correo]);
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            $hashed_password = encriptar_pwd($_POST["correo"], $_POST["contrasena"]);
+            $resultado["hashed_password"] = $hashed_password;
+            
+            $sql = "SELECT contrasenia FROM usuarios WHERE usuario = '$_POST[correo]' AND  contrasenia LIKE'$hashed_password' ";
+            $consulta = $conexion->consultar($sql);
+            $resultado["sql"] = $sql;
+            $resultado["consulta"] = $consulta;
 
             // Verificar si el correo existe en la base de datos
-            if ($row && password_verify($contrasena, $row['contrasenia'])) {
+            if ($consulta["rowCount"] > 0) {
                 $mensaje = "Inicio de sesión exitoso.";
                $resultado['resultado']=true;
                $resultado['mensaje']=$mensaje;
@@ -114,12 +137,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 }
+// Crear una instancia de la clase Conexion
+
+
+
+function encriptar_pwd($conn, $u, $pw) {
+    $username = stripslashes($conn->quote($u));
+    $username = trim($username, "'"); // Eliminar comillas añadidas por quote
+    $password = sha1(strtolower($username) . strip_tags(stripslashes($pw)));
+    return $password;
+}
+
+
 
 echo json_encode($resultado); // Mostrar el mensaje de error o éxito
 ?>
-
-
-
-
-
-

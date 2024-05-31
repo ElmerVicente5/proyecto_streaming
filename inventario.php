@@ -15,7 +15,7 @@
 											<!--begin::Card toolbar-->
 											
 												<!--begin::Add product-->
-												<a href="apps/ecommerce/catalog/add-product.html" class="btn btn-primary ">Add Product</a>
+												<a href="#/agregarProducto" class="btn btn-primary ">Agregar Producto</a>
 												<!--end::Add product-->
 											</div>
 											<!--end::Card toolbar-->
@@ -116,8 +116,32 @@
 		// Evento para el botón Eliminar
 		$('#TablaInventario tbody').off("click").on('click', 'a.btnEliminar', function() {
 			var fila = TablaverSuscripciones.row($(this).closest('tr')).data();
-			// Aquí puedes agregar la lógica para eliminar el producto, por ejemplo, mostrar un modal
-		});
+			
+    		var id_producto = fila.id_producto; // Asegúrate de que tengas una columna en tu tabla que contenga el ID del producto
+
+    		// Envía una solicitud AJAX para eliminar el producto
+			if (confirm('¿Estás seguro de que deseas eliminar este producto?')) {
+            // Envía una solicitud AJAX para eliminar el producto
+            $.ajax({
+					url: 'Backend/mostrarVentas.php',
+					type: 'POST',
+					data: { accion: 'eliminarProducto', idProducto: id_producto },
+					dataType: 'json',
+					success: function(response) {
+						if (response.success) {
+							alert(response.message);
+							// Actualiza la tabla después de la eliminación
+							TablaverSuscripciones.ajax.reload();
+						} else {
+							alert("Error: " + response.message);
+						}
+					},
+					error: function(xhr, status, error) {
+						console.error("Error:", error);
+                }
+           		 });
+				
+			}});
 	});
 
 

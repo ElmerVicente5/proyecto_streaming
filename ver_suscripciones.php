@@ -13,7 +13,7 @@
 									<div class="card-body pt-5 "> 
 										<div class="table-responsive">
 											<!--begin::Add subscription-->
-											<a href="apps/subscriptions/add.html" class="btn btn-primary" style="float: left;margin-right: 5%;      display: block;  position: relative;  z-index: 5;"> <i class="ki-duotone ki-plus fs-2"></i>Add Subscription</a>
+											
 											<!--end::Add subscription-->
 
 											<!--begin::Table-->
